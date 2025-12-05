@@ -1,0 +1,23 @@
+.
+..
+.DS_Store
+.Rproj.user
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+
+*_files
+*.html
+*.pptx
+
+/.quarto/
+/docs/
+/_site/
+/_includes/
+/site_libs/
+/Local Only/
+/Images/
+
+/_quarto_internal_scss_error.scss
+Yale_typeface/
