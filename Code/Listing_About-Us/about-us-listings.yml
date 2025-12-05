@@ -1,0 +1,58 @@
+# -----------
+# yaml listing for the Datasets page in the Yale School of 
+# Public Health (YSPH) Resource Navigation Tool github.io page.
+# 
+# Filter by three categories: 
+#   1. Region and/or affiliation 
+#   2. Dataset content type
+#   3. Accessibility
+# 
+# Sort by title and date updated.
+# 
+# Author: Shelby Golden, M.S.
+#   Date: May 10th, 2025
+# 
+# Last Updated: 
+
+items:
+  tiles:
+    - name: Bhramar Mukherjee, PhD
+      date-added: 2025-06-11
+      date-updated: 2025-06-11
+      titles: |
+        Senior Associate Dean of Public Health Data Science and Data Equity; Anna M.R. Lauder Professor of Biostatistics; Professor of Epidemiology (Chronic Diseases) and of Statistics and Data Science; Affiliated Faculty, Yale Institute for Global Health
+      bio: |
+        Professor Bhramar Mukherjee is the Anna M.R. Lauder Professor of Biostatistics and Professor of Chronic Disease Epidemiology at the Yale School of Public Health (YSPH). Professor Mukherjee serves as the inaugural Senior Associate Dean of Public Health Data Science and Data Equity at YSPH. She holds a secondary appointment in the Department of Statistics and Data Science and is affiliated with the MacMillan Center and the Institute for the Foundations of Data Science. She serves on the Yale Cancer Center Director’s cabinet.
+      image: ../Images/People/bhramar-mukherjee.jpeg
+      email: bhramar.mukherjee@yale.edu
+      phone: 203-737-8644
+      ysph-site: https://ysph.yale.edu/profile/bhramar-mukherjee/
+      group: https://ysph-dsde.github.io/mukherjee-lab/
+      linkedin: https://www.linkedin.com/in/bhramar-mukherjee-483810320/
+    - name: Zuoheng Anita Wang, PhD
+      date-added: 2025-12-05
+      date-updated: 2025-12-05
+      titles: |
+        Professor of Biostatistics
+      bio: |
+        Dr. Wang is a Professor of Biostatistics, Computational Biology and Bioinformatics, and Biomedical Informatics & Data Science at Yale University. Her research focuses on statistical modeling of omics and healthcare data. Dr. Wang’s statistical expertise spans kernel machine methods, mixed effects models, correlated and longitudinal data analysis, machine learning, and network analysis. She develops innovative statistical methods and computational tools for large-scale biomedical studies and electronic health records data, including disease risk prediction, genetic susceptibility variant identification, and single-cell and spatial transcriptomic data analysis, with application in mental health, addiction, cancer, autism, lung and cardiovascular diseases, contributing to the understanding of disease pathogenesis.
+      image: ../Images/People/zuoheng-anita-wang.jpeg
+      email: zuoheng.wang@yale.edu
+      phone: 203-737-2672
+      ysph-site: https://ysph.yale.edu/profile/zuoheng-wang/
+      linkedin: https://www.linkedin.com/in/zuoheng-wang-902a6a17/
+      google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=zyS2E8oAAAAJ
+    - name: Shelby Golden, M.S.
+      date-added: 2025-06-11
+      date-updated: 2025-06-11
+      titles: | 
+        Data Scientist I
+      bio: |
+        Shelby Golden is a data scientist with a background in computational mathematics, molecular biology, and biochemistry. She holds a Master of Science in Applied Computational Mathematics from Johns Hopkins University and dual Bachelor of Science degrees in Molecular, Cellular, Developmental Biology and Biochemistry with a minor in Engineering in Applied Mathematics.
+      image: ../Images/People/shelby-golden.jpeg
+      email: shelby.golden@yale.edu
+      phone: 203-737-8644
+      ysph-site: https://ysph.yale.edu/profile/shelby-golden/
+      group: https://ysph-dsde.github.io/mukherjee-lab/
+      linkedin: https://www.linkedin.com/in/shelby-golden/
+      

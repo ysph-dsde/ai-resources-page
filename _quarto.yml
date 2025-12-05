@@ -1,0 +1,72 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!Local Only/"
+
+website:
+  title: "AI Resource Navigation Tool"
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: false
+  favicon: Images/DSDE-Social-Media-Profile.png
+  search: true
+  #repo-url: https://github.com/ysph-dsde/resources-page
+  #issue-url: https://github.com/ysph-dsde/resources-page/issues
+  #repo-actions: [source, issue]
+  navbar:
+    right:
+      - text: "Resources"
+        href: Pages/resources.qmd
+      - text: "About Us"
+        href: Pages/about-us.qmd
+      - text: "Contact"
+        href: https://ysph.yale.edu/public-health-research-and-practice/research-centers-and-initiatives/public-health-data-science-and-data-equity/contact-us/
+        target: _blank
+  page-footer:
+    background: light 
+    left: "This site is hosted on [ysph-dsde.github.io](https://github.com/ysph-dsde), rendered with Quarto (v1.6.3), and styled using a modified version of [flatly](https://github.com/thomaspark/bootswatch) with Yale School of Public Health branding, incorporating Data Science and Data Equity color schemes." 
+    center:
+      - text: About Us
+        href: Pages/about-us.qmd
+      - text: Resources
+        href: Pages/resources.qmd
+      - text: Contact
+        href: https://ysph.yale.edu/public-health-research-and-practice/research-centers-and-initiatives/public-health-data-science-and-data-equity/contact-us/
+    right: 
+      - icon: globe
+        href: https://ysph.yale.edu/public-health-research-and-practice/research-centers-and-initiatives/public-health-data-science-and-data-equity/
+      - icon: github
+        href: https://github.com/ysph-dsde
+      - icon: linkedin
+        href: https://www.linkedin.com/showcase/public-health-data-science-and-data-equity-at-yale/
+      - icon: envelope 
+        href: mailto:admin.dsdeysph@yale.edu
+      - text: "(203) 737-8644"
+      - text: "</ul><div style='margin-top: 0px;'>Yale affiliates, provide feedback <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UMFpGM1dIUlRTSlE2OUtFU1FKSE9CWk1XWi4u'>here</a>.</br>Non-affiliates, provide feedback <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UNEROTzJISElXVzFLRjFLSDA2UE5DNzVMUi4u'>here</a>.</div><ul class='footer-items list-unstyled' style='display:none;'>"
+
+format:
+  html:
+    include-in-header: 
+      #- _includes/google_analytics.html
+      - _includes/functional_scripts.html
+      #- _includes/feedback_popup.html
+    header-includes:
+      - <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+      - <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    toc: true
+    toc-depth: 4
+    theme:
+      - flatly
+      - _styles/styles.scss
+    from: markdown+autolink_bare_uris
+
+
+editor: source
+filters:
+    - parse-latex
+
+markdown: 
+  editor_options: 
+    chunk_output_type: console

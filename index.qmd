@@ -1,0 +1,114 @@
+---
+  format: 
+    html:
+      toc: false
+  page-navigation: false
+  back-to-top-navigation: true
+---
+
+```{=html}
+<div class="landing-banner"></div>
+<div class="logo-container">
+    <img src="Images/Wordmark-Data-Science-and-Data-Equity-blues.png" alt="Logo" class="logo">
+</div>
+```
+
+Welcome to the Yale School of Public Health Data Science and Data Equity (YSPH DSDE) Data Concierge site. This Data Concierge was established to support the mission of DSDE in reducing barriers to utilizing data science and AI in public health training, research, and practice.
+
+Our mission is to develop and support a robust public health data science infrastructure that ensures secure and equitable data access and facilitates the translation of methodologies into user-friendly, open-source software tools and publicly available datasets. We strive to make high-quality public health resources accessible to all and foster an environment where data-driven decision-making can thrive.
+
+\
+
+```{=html}
+<body>
+  <div class="container_title">
+    <div class="tile_title">
+      <a href="Pages/resources.qmd" title="Listing page">
+        <img src="Images/DSDE Identity/Firefly data scientists; illustration 75467.jpg" alt="Resources page" class="image">
+        <h1>Resources</h1>
+        <h2>See the Listings</h2>
+        <i class="tile_icon bi bi-arrow-right-circle-fill"></i>
+      </a>
+    </div>
+    <div class="tile_title">
+      <a href="Pages/datasets.qmd" title="Listing page">
+        <img src="Images/DSDE Identity/Firefly data science data equity 50124.jpg" alt="Datasets page" class="image">
+        <h1>Datasets</h1>
+        <h2>See the Listings</h2>
+        <i class="tile_icon bi bi-arrow-right-circle-fill"></i>
+      </a>
+    </div>
+  </div>
+</body>
+
+```
+
+\
+
+## Navigating the Site
+
+Explore our comprehensive collection of resources and datasets curated from international organizations, United States agencies, and Yale University that can support your public health research. Dataset listings come with detailed information on how to obtain the data, expected timelines for access and utilization, and examples of YSPH studies conducted and published using these specific datasets.
+
+
+```{=html}
+<body>
+  <div class="container_static">
+    <div class="tile_static">
+      <div class="image-container" style="position: relative;">
+        <img src="Images/DSDE Identity/Firefly data science ai hub; watercolor image 92513.jpg" class="img">
+        <!-- Checking condition for semester indicators -->
+        <div class="semester-indicators">
+          <div class="semester-indicator">Fa</div>
+          <div class="semester-indicator">Sp</div>
+          <div class="semester-indicator">Su</div>
+          <div class="semester-indicator">As</div>
+          <div class="semester-indicator">Va</div>
+        </div>
+      </div>
+      <h2 class="h2 js-line-count" style="pointer-events: none">BIS 565: The Role of Ethics and Equity in Data Science and AI</h2>
+      <p class="instructors_static">
+        <a href="#">Bhramar Mukherjee, PhD</a>,
+        <a href="#">Harsh Parikh, MS, PhD</a>
+      </p>
+      <p class="description">With the explosion of conversational generative artificial intelligence (AI) tools, such as ChatGPT, Gemini, Llama, Claude Sonnet, DeepSeek, and many others, innovations in data science are greatly influencing day-to-day decision making of the public including...</p>
+      <div class="card-header_static py-1 px-2 border-bottom bg-light">
+        <small class="card-text inline-block">
+          &nbsp;
+          <a href="#" title="Main site" class="source-code card-text float-beginning inline-block tile_a">
+            <i class="bi-globe"></i></a>
+          &nbsp;
+          <a href="#" title="Group site" class="source-code card-text float-beginning inline-block tile_a">
+            <i class="bi-people-fill"></i></a>
+          &nbsp;
+          <a href="#" title="Course site" class="source-code card-text float-beginning inline-block tile_a">
+            <i class="bi-mortarboard"></i></a>
+          &nbsp;
+          <a href="#" title="GitHub page" class="source-code card-text float-beginning inline-block tile_a">
+            <i class="bi-github"></i></a>
+          &nbsp;
+          <a href="#" title="View publication" class="source-code card-text float-beginning inline-block tile_a">
+            <i class="bi-journal-text"></i></a>
+          <p class="topic" style="margin-bottom: 5px;">AI/ML</p>
+        </small>
+      </div>
+    </div>
+  </div>
+</body>
+```
+
+
+
+The resources and datasets are presented in tiles that contain salient details about the source, along with relevant links, like the one displayed on the left. Each tile can feature any combination of five hyperlinked icons:
+
+<i class="bi bi-globe" style="color: var(--link-color);"></i> \ Links to the main website of the dataset/resource.
+
+<i class="bi bi-people" style="color: var(--link-color);"></i> \ Links to the websites of the research groups responsible for creating the dataset/resource.
+
+<i class="bi-mortarboard" style="color: var(--link-color);"></i> \ Links to the websites of the research groups responsible for creating the dataset/resource.
+
+<i class="bi bi-github" style="color: var(--link-color);"></i> \  Links to code repositories for the dataset/resource.
+
+<i class="bi bi-journal-text" style="color: var(--link-color);"></i> \ Links to example publications that utilize the dataset/resource provided by the creators.
+
+
+
