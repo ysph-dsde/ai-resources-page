@@ -30,14 +30,6 @@ Our mission is to develop and support a robust public health data science infras
         <i class="tile_icon bi bi-arrow-right-circle-fill"></i>
       </a>
     </div>
-    <div class="tile_title">
-      <a href="Pages/datasets.qmd" title="Listing page">
-        <img src="Images/DSDE Identity/Firefly data science data equity 50124.jpg" alt="Datasets page" class="image">
-        <h1>Datasets</h1>
-        <h2>See the Listings</h2>
-        <i class="tile_icon bi bi-arrow-right-circle-fill"></i>
-      </a>
-    </div>
   </div>
 </body>
 
