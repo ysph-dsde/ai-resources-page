@@ -13,20 +13,38 @@
 </div>
 ```
 
-Welcome to the Yale School of Public Health Data Science and Data Equity (YSPH DSDE) Data Concierge site. This Data Concierge was established to support the mission of DSDE in reducing barriers to utilizing data science and AI in public health training, research, and practice.
+Welcome to the Yale School of Public Health Data Science and Data Equity (YSPH DSDE) curation of Yale's AI/ML and data science courses, educational opportunities, events, and fellowships. This comprehensive collection was assembled to support DSDE's mission of reducing barriers to data science and AI adoption in public health training, research, and practice.
 
-Our mission is to develop and support a robust public health data science infrastructure that ensures secure and equitable data access and facilitates the translation of methodologies into user-friendly, open-source software tools and publicly available datasets. We strive to make high-quality public health resources accessible to all and foster an environment where data-driven decision-making can thrive.
+Our mission is to develop robust public health data science infrastructure that ensures secure, equitable data access while translating complex methodologies into user-friendly, open-source tools and publicly available datasets. We strive to make high-quality public health resources universally accessible and foster data-driven decision-making across the field.
 
 \
+
+:::{.column-page-inset}
 
 ```{=html}
 <body>
   <div class="container_title">
     <div class="tile_title">
+      <a href="Pages/policies.qmd" title="Listing page">
+        <img src="Images/DSDE Identity/DSDE People_AS399026036.jpeg" alt="AI policies page" class="image">
+        <h1>Policies</h1>
+        <h2>See the Page</h2>
+        <i class="tile_icon bi bi-arrow-right-circle-fill"></i>
+      </a>
+    </div>
+    <div class="tile_title">
       <a href="Pages/resources.qmd" title="Listing page">
-        <img src="Images/DSDE Identity/Firefly data scientists; illustration 75467.jpg" alt="Resources page" class="image">
-        <h1>Resources</h1>
+        <img src="Images/DSDE Identity/AdobeStock_215933176.jpeg" alt="Courses/educational programs page" class="image">
+        <h1>Courses & Educational Programs</h1>
         <h2>See the Listings</h2>
+        <i class="tile_icon bi bi-arrow-right-circle-fill"></i>
+      </a>
+    </div>
+    <div class="tile_title">
+      <a href="Pages/tools.qmd" title="Listing page">
+        <img src="Images/DSDE Identity/AdobeStock_355152341 cropped.jpeg" alt="Yale's AI tools page" class="image">
+        <h1>Yale's AI Tools</h1>
+        <h2>See the Page</h2>
         <i class="tile_icon bi bi-arrow-right-circle-fill"></i>
       </a>
     </div>
@@ -34,13 +52,15 @@ Our mission is to develop and support a robust public health data science infras
 </body>
 
 ```
+:::
 
 \
 
 ## Navigating the Site
 
-Explore our comprehensive collection of resources and datasets curated from international organizations, United States agencies, and Yale University that can support your public health research. Dataset listings come with detailed information on how to obtain the data, expected timelines for access and utilization, and examples of YSPH studies conducted and published using these specific datasets.
+Navigate to our comprehensive collection of education resources offered at Yale using the tiles below. Each tile contains salient details about the offering along with relevant links, as shown in the example below.
 
+The lower section of each tile includes hyperlinked icons and a brief keyword describing the subject area. Lead instructors and resource creators are listed below the resource name with links to their Yale pages. When applicable, semester codes appear in the bottom-left corner of the banner image: "Fa" (Fall), "Sp" (Spring), "Su" (Summer), "As" (asynchronous), and "Va" (when offerings vary).
 
 ```{=html}
 <body>
@@ -59,8 +79,7 @@ Explore our comprehensive collection of resources and datasets curated from inte
       </div>
       <h2 class="h2 js-line-count" style="pointer-events: none">BIS 565: The Role of Ethics and Equity in Data Science and AI</h2>
       <p class="instructors_static">
-        <a href="#">Bhramar Mukherjee, PhD</a>,
-        <a href="#">Harsh Parikh, MS, PhD</a>
+        <a href="#">Bhramar Mukherjee, PhD</a>
       </p>
       <p class="description">With the explosion of conversational generative artificial intelligence (AI) tools, such as ChatGPT, Gemini, Llama, Claude Sonnet, DeepSeek, and many others, innovations in data science are greatly influencing day-to-day decision making of the public including...</p>
       <div class="card-header_static py-1 px-2 border-bottom bg-light">
@@ -88,19 +107,17 @@ Explore our comprehensive collection of resources and datasets curated from inte
 </body>
 ```
 
+Each tile features any combination of five hyperlinked icons:
 
+<i class="bi bi-globe" style="color: var(--link-color);"></i> \ Links to the main website for the educational program or initiative.
 
-The resources and datasets are presented in tiles that contain salient details about the source, along with relevant links, like the one displayed on the left. Each tile can feature any combination of five hyperlinked icons:
+<i class="bi bi-people-fill" style="color: var(--link-color);"></i> \ Links to websites of research groups offering the educational resource.
 
-<i class="bi bi-globe" style="color: var(--link-color);"></i> \ Links to the main website of the dataset/resource.
+<i class="bi-mortarboard" style="color: var(--link-color);"></i> \ Links to the course site or learning platform.
 
-<i class="bi bi-people" style="color: var(--link-color);"></i> \ Links to the websites of the research groups responsible for creating the dataset/resource.
+<i class="bi bi-github" style="color: var(--link-color);"></i> \  Links to code repositories containing supplementary educational materials.
 
-<i class="bi-mortarboard" style="color: var(--link-color);"></i> \ Links to the websites of the research groups responsible for creating the dataset/resource.
-
-<i class="bi bi-github" style="color: var(--link-color);"></i> \  Links to code repositories for the dataset/resource.
-
-<i class="bi bi-journal-text" style="color: var(--link-color);"></i> \ Links to example publications that utilize the dataset/resource provided by the creators.
+<i class="bi bi-journal-text" style="color: var(--link-color);"></i> \ Links to publications inspired by or resulting from the educational resource.
 
 
 

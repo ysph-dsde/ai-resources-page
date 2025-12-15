@@ -1,0 +1,47 @@
+---
+title-block-banner: true
+title: |
+  Yale's AI Tools
+description: |
+  </br>
+  Three core organizations provide guidance and support for Yale students, staff, and faculty using AI in education and work: <a href="https://ai.yale.edu/" target="_blank">AI at Yale</a>, the <a href="https://poorvucenter.yale.edu/" target="_blank">Poorvu Center for Teaching and Learning</a>, and the <a href="https://library.yale.edu/" target="_blank">Yale Libraries</a>. Explore the following curation of AI tools available to Yale affiliates.
+include-in-header: ../_includes/feedback_popup.html
+bibliography: references.bib
+csl: ../Code/nature.csl
+---
+
+:::{.column-page-inset}
+
+```{=html}
+<body>
+    <div class="container_static_page_tiles">
+        <div class="tile_static_page" id="tile1">
+            <a href="https://ai.yale.edu/yales-ai-tools-and-resources" title="AI at Yale - Guidance">
+                <div class="content">
+                    <h1>Yale’s AI Tools and Resources</h1>
+                    <p class="description">Get started with AI tools available to students, faculty, and staff by exploring the options and experimenting with the offerings. The provided tables detail available tools, explain access methods, and identify supported data types.</p>
+                    <h2>From AI at Yale</h2>
+                    <i class="tile_icon_static bi bi-arrow-right-circle-fill"></i>
+                    <canvas class="network-canvas"></canvas>
+                </div>
+            </a>
+        </div>
+        <div class="tile_static_page" id="tile2">
+            <a href="https://poorvucenter.yale.edu/teaching/teaching-resource-library/ai-guidance-for-teachers/ai-tools/yale-provided-tools" title="Resources page">
+                <div class="content">
+                    <h1>Yale Provided Tools</h1>
+                    <p class="description">Explore Yale's AI tools like Clarity, Microsoft Copilot, and Google's Gemini. Each tool offers unique capabilities, from chatting with LLMs to generating custom quizzes. Detailed information on accessing these tools and their features is available to the Yale community.</p>
+                    <h2>From the Poorvu Center</h2>
+                    <i class="tile_icon_static bi bi-arrow-right-circle-fill"></i>
+                    <canvas class="network-canvas"></canvas>
+                </div>
+            </a>
+        </div>
+      </div>
+    <script src="../Code/network_graph.js"></script>
+</body>
+```
+
+
+:::
+

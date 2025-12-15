@@ -1,0 +1,78 @@
+---
+title-block-banner: true
+title: |
+  Policies
+description: |
+  </br>
+  Three core organizations provide guidance and support for Yale students, staff, and faculty using AI in education and work: <a href="https://ai.yale.edu/" target="_blank">AI at Yale</a>, the <a href="https://poorvucenter.yale.edu/" target="_blank">Poorvu Center for Teaching and Learning</a>, and the <a href="https://library.yale.edu/" target="_blank">Yale Libraries</a>. Explore the following curated pages from these sources to learn more about how to appropriately and effectively implement AI in your education or work.
+include-in-header: ../_includes/feedback_popup.html
+bibliography: references.bib
+csl: ../Code/nature.csl
+---
+
+:::{.column-page-inset}
+
+```{=html}
+<body>
+    <div class="container_static_page_tiles">
+        <div class="tile_static_page" id="tile1">
+            <a href="https://ai.yale.edu/guidance" title="AI at Yale - Guidance">
+                <div class="content">
+                    <h1>Guidance</h1>
+                    <p class="description">Find guidance on the ethical use of AI, including privacy, data protection, and generative AI. Resources include foundational courses, guidelines for AI use in research and teaching, and tailored support from the Poorvu Center and Yale Library.</p>
+                    <h2>From AI at Yale</h2>
+                    <i class="tile_icon_static bi bi-arrow-right-circle-fill"></i>
+                    <canvas class="network-canvas"></canvas>
+                </div>
+            </a>
+        </div>
+        <div class="tile_static_page" id="tile2">
+            <a href="https://poorvucenter.yale.edu/ai-guidance-for-students" title="Resources page">
+                <div class="content">
+                    <h1>AI Guidance for Students</h1>
+                    <p class="description">Prepare to lead in an AI-driven future with essential skills emphasized by Yale's evolving curricula. Resources include hands-on practice, exploring multiple models, and consulting with instructors to understand AI's capabilities and ethical considerations.</p>
+                    <h2>From the Poorvu Center</h2>
+                    <i class="tile_icon_static bi bi-arrow-right-circle-fill"></i>
+                    <canvas class="network-canvas"></canvas>
+                </div>
+            </a>
+        </div>
+        <div class="tile_static_page" id="tile3">
+            <a href="https://poorvucenter.yale.edu/teaching/teaching-resource-library/ai-guidance-for-teachers" title="Resources page">
+                <div class="content">
+                    <h1>AI Guidance for Teachers</h1>
+                    <p class="description">Find guidance on the use of generative AI in academics, addressing integrity, privacy, and pedagogy. Resources include model policies, consultations, and comprehensive information to help instructors integrate AI into their courses.</p>
+                    <h2>From the Poorvu Center</h2>
+                    <i class="tile_icon_static bi bi-arrow-right-circle-fill"></i>
+                    <canvas class="network-canvas"></canvas>
+                </div>
+            </a>
+        </div>
+        <div class="tile_static_page" id="tile4">
+            <a href="https://library.yale.edu/help-and-research-support/research-support/using-ai-research" title="Resources page">
+                <div class="content">
+                    <h1>Using AI in Research</h1>
+                    <p class="description">Find support and AI tools at Yale Library to enhance research and teaching. Resources include guidance on AI integration, consultations, workshops, and the AI Literacy Framework to develop AI fluency and ethical practices.</p>
+                    <h2>From the Yale Library</h2>
+                    <i class="tile_icon_static bi bi-arrow-right-circle-fill"></i>
+                    <canvas class="network-canvas"></canvas>
+                </div>
+            </a>
+        </div>
+        <div class="tile_static_page" id="tile5">
+            <a href="https://iris.paho.org/items/b98d9c0f-6008-4b78-9066-01e1e81c29c5" title="Resources page">
+                <div class="content">
+                    <h1>AI Prompt Design for Public Health</h1>
+                    <p class="description">Learn to create effective AI prompts for public health to ensure accurate, useful content. The document details key components like objective, audience, and tone, and highlights the importance of human oversight.</p>
+                    <h2>From the PAHO</h2>
+                    <i class="tile_icon_static bi bi-arrow-right-circle-fill"></i>
+                    <canvas class="network-canvas"></canvas>
+                </div>
+            </a>
+        </div>
+    <script src="../Code/network_graph.js"></script>
+</body>
+```
+
+:::
+

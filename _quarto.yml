@@ -6,7 +6,7 @@ project:
     - "!Local Only/"
 
 website:
-  title: "AI Resource Navigation Tool"
+  title: "AI Resources"
   page-navigation: true
   back-to-top-navigation: true
   bread-crumbs: false
@@ -17,8 +17,12 @@ website:
   repo-actions: [source, issue]
   navbar:
     right:
-      - text: "Resources"
+      - text: "Policies"
+        href: Pages/policies.qmd
+      - text: "Courses & Programs"
         href: Pages/resources.qmd
+      - text: "Yale's AI Tools"
+        href: Pages/tools.qmd
       - text: "About Us"
         href: Pages/about-us.qmd
       - text: "Contact"
@@ -28,11 +32,15 @@ website:
     background: light 
     left: "This site is hosted on [ysph-dsde.github.io](https://github.com/ysph-dsde), rendered with Quarto (v1.6.3), and styled using a modified version of [flatly](https://github.com/thomaspark/bootswatch) with Yale School of Public Health branding, incorporating Data Science and Data Equity color schemes." 
     center:
-      - text: About Us
-        href: Pages/about-us.qmd
-      - text: Resources
+      - text: "Policies"
+        href: Pages/policies.qmd
+      - text: "Courses & Programs"
         href: Pages/resources.qmd
-      - text: Contact
+      - text: "Tools"
+        href: Pages/tools.qmd
+      - text: "About Us"
+        href: Pages/about-us.qmd
+      - text: "Contact"
         href: https://ysph.yale.edu/public-health-research-and-practice/research-centers-and-initiatives/public-health-data-science-and-data-equity/contact-us/
     right: 
       - icon: globe

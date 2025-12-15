@@ -16,7 +16,11 @@ listing:
 
 ```{=html}
 <div class="header">
-    <h1>Resources</h1>
-    <p>Yale offers a rich array of resources to support its academic community. These resources include access to specialized research databases, educational tools, and a variety of digital tools and platforms.</p>
+    </br>
+    <h1>Courses & Educational Programs</h1>
+    </br>
+    <p>Explore Yale's rich array of educational resources designed to support its academic community by browsing the current listings of AI/ML and data science courses, educational materials, events, symposiums, and fellowships.</p>
+    </br>
  </div>
 ```
+
