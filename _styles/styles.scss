@@ -917,6 +917,104 @@ ol, ul {
   flex-direction: column;
   margin-bottom: 15px;
 }
+
+// .container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   align-content: center;
+//   margin-right: 20px;
+//   margin-bottom: 20px;
+//   gap: 20px 20px;
+// }
+// .tile {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   width: calc(30% - 15px);
+//   min-width: 320px;
+//   height: 440px;
+//   border: 0.9px solid #444;
+//   border-radius: 0;
+//   text-align: left;
+//   text-decoration: none;
+//   color: inherit;
+//   background-color: #ffffff;
+//   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+//   overflow: hidden;
+// }
+// .tile img {
+//   width: 100%;
+//   height: 150px;
+//   object-fit: cover;
+//   display: block;
+//   padding-top: 0px;
+//   cursor: default;
+// }
+// .semester-indicators {
+//   position: absolute;
+//   bottom: 10px;
+//   left: 10px;
+//   display: flex;
+//   gap: 5px; /* Space between the circles */
+// }
+// .semester-indicator {
+//   width: 30px;
+//   height: 24px;
+//   background-color: #ffffff;
+//   border: 0.9px solid #444;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-family: "YaleNew", serif;
+//   font-weight: bold;
+//   line-height: 1;
+// }
+// .tile h2 {
+//   font-size: 1.2rem;
+//   line-height: 1;
+//   font-weight: bold;
+//   padding-left: 6px;
+//   padding-right: 6px;
+//   padding-bottom: 6px;
+//   color: #52505d;
+//   border-bottom: none;
+//   margin: 10px 0 0 0;
+// }
+// .instructors {
+//   margin-top: 10px;
+//   font-size: 14px;
+//   line-height: 1;
+// }
+// .instructors a {
+//   color: var(--link-color);
+//   text-decoration: none;
+// }
+// .instructors a:hover {
+//   color: var(--hover-color);
+//   text-decoration: underline;
+// }
+// .tile p {
+//   font-size: 0.8rem;
+//   padding: 6px;
+//   color: #52505d;
+//   margin: 0;
+//   flex-grow: 1;
+//   overflow: hidden;
+//   padding-bottom: 0.14em;
+// }
+// .card-header.py-1.px-2.border-bottom.bg-light {
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   background-color: var(--quarto-scss-export-light-header-background) !important;
+//   margin-top: auto;
+// }
+// .card-text i {
+//   font-size: 1.2em;
+// }
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -942,13 +1040,16 @@ ol, ul {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
 }
-.tile img {
+.tile .image-container {
+  position: relative;
+  height: 150px; /* Adjust height as necessary */
   width: 100%;
-  height: 150px;
-  object-fit: cover;
-  display: block;
-  padding-top: 0px;
-  cursor: default;
+}
+.tile .network-canvas {
+  display: block; /* Always display the canvas */
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1; /* Optional: Maintain aspect ratio */
 }
 .semester-indicators {
   position: absolute;
@@ -1013,6 +1114,16 @@ ol, ul {
 .card-text i {
   font-size: 1.2em;
 }
+.card-text a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+.card-text a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+
 #showMoreBtn {
   display: block;
   background-color: #fff;
@@ -1311,24 +1422,27 @@ ol, ul {
     transform: translateY(-5px);
 }
 .tile_static_page .content {
-    position: absolute; /* Ensures content stays on top */
+    position: absolute; /* Ensure content stays on top */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Ensures it stays above the canvas */
+    z-index: 1; /* Ensure it stays above the canvas */
     padding: 20px;
     box-sizing: border-box;
     color: black;
-    /*--background: linear-gradient(to right, 
-      rgba(211, 211, 211, 0) 0%, 
-      #f7f2fc 35%, 
-      #f7f2fc 65%, 
-      rgba(211, 211, 211, 0) 100%); --*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.tile_static_page .text-box {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better readability */
+}
+
 .tile_static_page h1,
 .tile_static_page h2 {
     margin: 0;
@@ -1362,17 +1476,13 @@ ol, ul {
     text-decoration: none;
 }
 .network-canvas {
-    display: none;
+    display: block; /* Always display the canvas */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Ensures the canvas stays behind the content */
-}
-
-.tile_static_page:hover .network-canvas {
-    display: block;
+    z-index: 0; /* Ensure the canvas stays behind the content */
 }
 
 /* Responsive layout for different screen sizes */

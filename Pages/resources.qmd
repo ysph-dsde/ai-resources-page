@@ -14,6 +14,7 @@ listing:
     filter-ui: false
 ---
 
+
 ```{=html}
 <div class="header">
     </br>
@@ -22,5 +23,7 @@ listing:
     <p>Explore Yale's rich array of educational resources designed to support its academic community by browsing the current listings of AI/ML and data science courses, educational materials, events, symposiums, and fellowships.</p>
     </br>
  </div>
+ 
+<script src="../Code/network_graph_tile.js"></script> 
 ```
 
