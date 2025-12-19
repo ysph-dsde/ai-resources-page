@@ -3,7 +3,7 @@
 # Public Health (YSPH) AI Resource Navigation Tool github.io page.
 # 
 # Filter by two categories: 
-#   1. Affiliation 
+#   1. Institutional Home 
 #   2. Content Type
 #   3. Event Type
 #   4. Semester
@@ -11,12 +11,12 @@
 # Author: Shelby Golden, M.S.
 #   Date: December 5th, 2025
 # 
-# Date last updated: Sep. 10th, 2025
+# Date last updated: Dec. 16th, 2025
 #   Last updated by: Shelby Golden
 # 
 # 
 # Filter/search behavior with the ejs file:
-#   - Filter by two categories: 1. affiliation, 2. content type, 3. event type,
+#   - Filter by two categories: 1. institution, 2. content type, 3. event type,
 #     and 4. semester
 #   - Sort tiles by "title" and "date-updated". The user can
 #     control how these two characteristics are sorted.
@@ -49,9 +49,145 @@
   
 items:
   # -----------
-  # Region/Affiliation by: Yale School of Public Health
+  # Institutional Home by: Graduate School of Arts & Sciences
   - categories1:
-      - "Yale School of Public Health"
+      - "Graduate School of Arts & Sciences"
+    categories2:
+      - "AI/ML"
+      - "Data Science"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+    tiles:
+      - title: "CPSC 5380: Big Data Systems: Trends and Challenges"
+        description: |
+          Today’s Internet-scale applications and cloud services generate massive amounts of data. At the same time, the availability of inexpensive storage has made it possible for these services and applications to collect and store every piece of data they generate, in the hopes of improving their services by analyzing the collected data. This introduces interesting new opportunities and challenges designing systems for collecting, analyzing, and serving the so-called big data. This course looks at technology trends that have paved the way for big data applications, surveys state-of-the-art systems for storage and processing of big data, and considers future research directions driven by open research problems. Our discussions span topics such as cluster architecture, big data analytics stacks, scheduling and resource management, batch and stream analytics, graph processing, ML/AI frameworks, and serverless platforms and disaggregated architectures.
+        instructors:
+          - text: Anurag Khandelwal, PhD
+            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/anurag-khandelwal
+        date-added: 2025-12-04
+        date-updated: 2025-12-04
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Data Science"
+        course_site: https://courses.yale.edu/?keyword=CPSC%205380&srcdb=202503
+  - categories1:
+      - "Graduate School of Arts & Sciences"
+    categories2:
+      - "AI/ML"
+      - "Ethics"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+    tiles:
+      - title: "CPSC 5710: Trustworthy Deep Learning"
+        description: |
+          In recent years, deep learning has seen applications in many fields, from science and technology, to finance, humanity, and businesses. However, real-world, high-impact machine learning applications demand more than just model performance. In particular, deep learning models are often required to be “trustworthy,” so that domain experts can trust that the models consistently behave in a way that corresponds to their domain knowledge. For example, medical experts would expect a deep learning diagnosis model to be able to explicitly utilize medical domain knowledge in its prediction; an insurance company would expect a decision on insurance price to be explainable in terms of risk factors; a financial company would expect its fraud detection model to be robust to adversarial attacks; a physicist would expect models to provide consistency with the underlying laws. This course introduces various fields of trustworthy deep learning, including model robustness, defenses for adversarial attacks, interpretability, explainability, fairness, privacy, domain adaptation, rules, and constraints. The course covers some of these aspects in the context of graph neural networks but also covers many other ML models in general deep learning, natural language processing, and computer vision.
+        instructors:
+          - text: Rex (Zhitao) Ying, PhD
+            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/rex-zhitao-ying
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Ethics"
+        course_site: https://courses.yale.edu/?keyword=CPSC%205710&srcdb=202503
+  - categories1:
+      - "Graduate School of Arts & Sciences"
+    categories2:
+      - "Data Science"
+      - "Statistics/Mathematics"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+      - "Spring"
+    tiles:
+      - title: "S&DS 5230: YData: An Introduction to Data Science"
+        description: |
+          Computational, programming, and statistical skills are no longer optional in our increasingly data-driven world; they are essential for opening doors to manifold research and career opportunities. This course aims to dramatically enhance students’ knowledge and capabilities in fundamental ideas and skills in data science, especially computational and programming skills and inferential thinking. It emphasizes the development of these skills while providing opportunities for hands-on experience and practice. The course is designed to be accessible to students with little or no background in computing, programming, or statistics, but also engaging for more technically oriented students through extensive use of examples and hands-on data analysis. Python 3 is the computing language used. Enrollment is limited.
+        instructors:
+          - text: Ethan Meyers, PhD
+            href: https://campuspress.yale.edu/fdstest/ethan-meyers/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "Data Science, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=S%26DS%205230&srcdb=guide25
+  - categories1:
+      - "Graduate School of Arts & Sciences"
+    categories2:
+      - "Data Science"
+      - "Social Sciences"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+    tiles:
+      - title: "S&DS 5720: YData: Data Science for Political Campaigns"
+        description: |
+          Political campaigns have become increasingly data driven. Data science is used to inform where campaigns compete, which messages they use, how they deliver them, and among which voters. In this course, we explore how data science is being used to design winning campaigns. Students gain an understanding of what data is available to campaigns, how campaigns use this data to identify supporters, and the use of experiments in campaigns. The course provides students with an introduction to political campaigns, an introduction to data science tools necessary for studying politics, and opportunities to practice the data science skills presented in S&DS 523.
+        instructors:
+          - text: Joshua Kalla, PhD
+            href: https://politicalscience.yale.edu/people/joshua-kalla
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "Data Science, Social Sciences"
+        course_site: https://courses.yale.edu/?keyword=S%26DS%205720&srcdb=guide25
+  - categories1:
+      - "Graduate School of Arts & Sciences"
+    categories2:
+      - "AI/ML"
+      - "Social Sciences"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+      - "Spring"
+    tiles:
+      - title: "SOCY 5670: AI in Social Science Methods"
+        description: |
+          Social scientists have begun integrating AI technology into the designs and methods of their research projects. How are they doing so? What are the current standards and best practices? This course uses a seminar format to review, discuss, and critique how AI technologies are currently being incorporated into social science research activities. Students read recently published articles and widely discussed unpublished papers, and, through class discussion, identify the promises and pitfalls of using AI to conduct social science research. Students also learn how to justify and explain the use of AI in their own research projects. During the course, students conduct an original research project that investigates a social science topic while making use of AI in the project’s design and/or methods.
+        instructors:
+          - text: Daniel Karell, PhD
+            href: https://sociology.yale.edu/people/daniel-karell
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Social Sciences"
+        course_site: https://courses.yale.edu/?keyword=SOCY%205670&srcdb=guide25
+  - categories1:
+      - "Graduate School of Arts & Sciences"
+    categories2:
+      - "AI/ML"
+      - "Humanities"
+    categories3:
+      - "Course"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "CPSC 5150: Law and Large Language Models"
+        description: |
+          This course is intended for computer science and law students interested in how artificial intelligence can be applied to legal reasoning. It combines basic AI theory with practical project work, focusing on using tools like large language models (LLMs) and other AI technologies for tasks common in legal practice. Students learn how to automate case summarization, draft legal memos and briefs, simulate oral arguments for better argumentation skills, and assist in the preparation of pro-se motions for self-represented litigants. The course emphasizes hands-on experience, helping students build real-world skills in applying AI in legal settings. Our goal is to bring together students from computer science and from law and match them together in the teams. Each team works on a project that automates a specific aspect of the legal process or legal reasoning, focusing on practical, real-world applications. In addition to all standard course requirements, graduate students need to present a recent, relevant research paper in class.
+        instructors:
+          - text: Ruzica Piskac, PhD
+            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/ruzica-piskac
+          - text: Scott J. Shapiro, JD, PhD
+            href: https://law.yale.edu/scott-j-shapiro
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Humanities"
+        course_site: https://courses.yale.edu/?keyword=CPSC%205150&srcdb=guide25
+  - categories1:
+      - "Graduate School of Arts & Sciences"
     categories2:
       - "AI/ML"
       - "Statistics/Mathematics"
@@ -59,144 +195,122 @@ items:
       - "Course"
     categories4:
       - "Fall"
+      - "Spring"
     tiles:
-      - title: "BIS 555: Machine Learning with Biomedical Data"
+      - title: "S&DS 6650: Intermediate Machine Learning"
         description: |
-          This course covers many popular topics in machine learning and statistics that are widely used for the exploration of biomedical data. Techniques covered include different linear prediction methods, random forest, boosting, neural networks, and some recent progress on model inference in high dimensions, as well as dimension reduction and clustering. Various examples using biomedical data—e.g., microarray gene expression data, single-cell RNA-Seq data—are provided. The emphasis is on the statistical aspects of different machine-learning methods and their applications to problems in computational biology.
+          S&DS 365 is a second course in machine learning at the advanced undergraduate or beginning graduate level. The course assumes familiarity with the basic ideas and techniques in machine learning, for example as covered in S&DS 265. The course treats methods together with mathematical frameworks that provide intuition and justifications for how and when the methods work. Assignments give students hands-on experience with machine learning techniques, to build the skills needed to adapt approaches to new problems. Topics include nonparametric regression and classification, kernel methods, risk bounds, nonparametric Bayesian approaches, graphical models, attention and language models, generative models, sparsity and manifolds, and reinforcement learning. Programming is central to the course, and is based on the Python programming language and Jupyter notebooks.
         instructors:
-          - text: Leying Guan, PhD
-            href: https://ysph.yale.edu/profile/leying-guan/
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
+          - text: John Lafferty, PhD
+            href: https://wti.yale.edu/profile/john-lafferty
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
         ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
+        color: "#7A4BA8"
         topic: "AI/ML, Statistics/Mathematics"
-        course_site: https://courses.yale.edu/?keyword=BIS%20555&srcdb=202503
+        course_site: https://courses.yale.edu/?keyword=S%26DS%206650&srcdb=guide25
   - categories1:
-      - "Yale School of Public Health"
+      - "Graduate School of Arts & Sciences"
     categories2:
       - "AI/ML"
+      - "Statistics/Mathematics"
     categories3:
       - "Course"
     categories4:
       - "Spring"
     tiles:
-      - title: "BIS 565: The Role of Ethics and Equity in Data Science and AI"
+      - title: "CPSC 5520: Deep Learning Theory and Applications"
         description: |
-          With the explosion of conversational generative artificial intelligence (AI) tools, such as ChatGPT, Gemini, Llama, Claude Sonnet, DeepSeek, and many others, innovations in data science are greatly influencing day-to-day decision making of the public including decision regarding health, well-being, prevention, treatment and care. This new course  thematically belongs to the intersectional field of critical data studies, data science, and public health. Critical data studies is an interdisciplinary field focused on the social, cultural, ethical, and epistemological aspects of data. We first define some of the fundamental technical terms and tools in modern data science, machine learning (ML), and AI such as random forest, neural networks, transformer, auto-encoder, embeddings, stable diffusion process, large language models/foundation models, reinforcement learning, and prediction-powered inference. We then introduce the notion of data equity and data ethics in broad philosophical terms, held by a theoretical framework that appeals to a set of key underlying principles, drawing primarily from the extant computer science and statistical/epidemiological literature. We introduce these core concepts and associated evaluation metrics. The discussed concepts include: fairness, accountability, transparency, ethics, privacy, governance, reflexivity, reproducibility, generalizability, representativeness, causality, confounding bias, selection bias, and information bias. The course consists of lectures, homework, paper presentations, discussion sessions, and a final project that involves critical appraisal of an open-source AI/data science tool or prediction model in terms of the principles taught in the course.
+          Deep neural networks have gained immense popularity within the past decade due to their success in many important machine-learning tasks such as image recognition, speech recognition, and natural language processing. This course provides a principled and hands-on approach to deep learning with neural networks. Students master the principles and practices underlying neural networks, including modern methods of deep learning, and apply deep learning methods to real-world problems including image recognition, natural language processing, and biomedical applications. Course work includes homework, a final exam, and a final project—either group or individual, depending on enrollment—with both a written and oral (i.e., presentation) component. The course assumes basic prior knowledge in linear algebra and probability.
         instructors:
-          - text: Bhramar Mukherjee, PhD
-            href: https://ysph.yale.edu/profile/bhramar-mukherjee/
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
+          - text: Smita Krishnaswamy, PhD
+            href: https://medicine.yale.edu/profile/smita-krishnaswamy/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
         ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML"
-        course_site: https://courses.yale.edu/?keyword=BIS%20565&srcdb=guide25
-      - title: "BIS 568: Applied Artificial Intelligence in Healthcare"
+        color: "#7A4BA8"
+        topic: "AI/ML, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=CPSC%205520&srcdb=guide25
+      - title: "CPSC 5810: Introduction to Machine Learning"
         description: |
-          Recent advances in machine learning (ML) offer tremendous promise to improve the care of patients. However, few ML applications are currently deployed within healthcare institutions and even fewer provide real value. This course is designed to empower students to overcome common pitfalls in bringing ML to the bedside and aims to provide a holistic approach to the complexities and nuances of ML in the healthcare space. The class focuses on key steps of model development and implementation centered on real-world applications. Students apply what they learn from the lectures, assignments, and readings to identify salient healthcare problems and tackle their solutions through end-to-end data engineering pipelines.
-          </br>
-          </br>
-          Students are expected to be proficient in programming (R, Python, or Julia preferred) and have some prior experience in machine learning including data preprocessing (e.g., Python-Pandas, R- Tidyverse) and the development and validation of ML models (e.g. logistic regression, random forest, XGBoost). Otherwise, permission of the instructor is required.
+          This course focuses on fundamental topics in machine learning. We begin with an overview of different components of machine learning and types of learning paradigms. We introduce a linear function, discuss how one can train a linear function on a given dataset, and utilize it to tackle classification and regression problems. We then consider kernel methods to enable us to solve nonlinear problems. Additionally, we introduce the concept of generalization error and overfitting. We discuss the role of regularization and extend linear regression to ridge regression. We also cover topics in optimization, beginning from gradient descent and extending it to stochastic gradient descent and its momentum variant. We also cover the concept of alternating optimization and topics within it. We introduce the curse of dimensionality and discuss topics on dimensionality reduction. Finally, we conclude the course with neural networks: how to build them using the topics discussed, how to optimize them, and how to apply them to solve a range of machine learning tasks.
         instructors:
-          - text: Wade Schulz, MD, PhD
-            href: https://medicine.yale.edu/profile/wade-schulz/
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
+          - text: Alex Wong, MS, PhD
+            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-wong
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
         ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML"
-        course_site: https://courses.yale.edu/?keyword=BIS%20565&srcdb=guide25
+        color: "#7A4BA8"
+        topic: "AI/ML, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=CPSC%205810&srcdb=guide25
+      - title: "CPSC 5860: Probabilistic Machine Learning"
+        description: |
+          This course provides an overview of the probabilistic frameworks for machine learning applications. The course covers probabilistic generative models, learning and inference, algorithms for sampling, and a survey of generative diffusion models. This course studies the theoretical analysis of the problems and how to design algorithms to solve them. This course familiarizes students with techniques and results in literature and prepares them for research in machine learning.
+        instructors:
+          - text: Andre Wibisono, MA, MEng, PhD
+            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/andre-wibisono
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=CPSC%205860&srcdb=guide25
+      - title: "S&DS 5170: Applied Machine Learning and Causal Inference"
+        description: |
+          Approaches to causal inference using machine learning. Covers randomized experiments with and without noncompliance, observational studies with and without ignorable treatment assignment, instrumental variables, and regression discontinuity. Machine-learning methods include bagging, boosting, tree-based methods such as random forests, and neural networks. Assignments provide students with hands-on experience with the methods. Applications are drawn from a variety of fields including political science, economics, public health, and medicine. Programming is central to the course and is based on the R programming language.
+        instructors:
+          - text: P. Aronow, PhD
+            href: https://politicalscience.yale.edu/people/p-aronow
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=S%26DS%205170&srcdb=guide25
+      - title: "S&DS 5650: Introductory Machine Learning"
+        description: |
+          This course covers the key ideas and techniques in machine learning without the use of advanced mathematics. Basic methodology and relevant concepts are presented in lectures, including the intuition behind the methods. Assignments give students hands-on experience with the methods on different types of data. Topics include linear regression and classification, tree-based methods, clustering, topic models, word embeddings, recurrent neural networks, dictionary learning, and deep learning. Examples come from a variety of sources including political speeches, archives of scientific articles, real estate listings, natural images, and others. Programming is central to the course and is based on the Python programming language.
+        instructors:
+          - text: John Lafferty, PhD
+            href: https://wti.yale.edu/profile/john-lafferty
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=S%26DS%205650&srcdb=guide25
   - categories1:
-      - "Yale School of Public Health"
+      - "Graduate School of Arts & Sciences"
     categories2:
       - "AI/ML"
-      - "Data Science"
+      - "Engineering"
       - "Statistics/Mathematics"
     categories3:
-      - "Seminar"
+      - "Course"
     categories4:
       - "Fall"
-      - "Spring"
     tiles:
-      - title: "PUBH 580 Seminar for Modeling in Public Health"
+      - title: "CPSC 5700: Artificial Intelligence "
         description: |
-          With the explosion of conversational generative artificial intelligence (AI) tools, such as ChatGPT, Gemini, Llama, Claude Sonnet, DeepSeek, and many others, innovations in data science are greatly influencing day-to-day decision making of the public including decision regarding health, well-being, prevention, treatment and care. This new course  thematically belongs to the intersectional field of critical data studies, data science, and public health. Critical data studies is an interdisciplinary field focused on the social, cultural, ethical, and epistemological aspects of data. We first define some of the fundamental technical terms and tools in modern data science, machine learning (ML), and AI such as random forest, neural networks, transformer, auto-encoder, embeddings, stable diffusion process, large language models/foundation models, reinforcement learning, and prediction-powered inference. We then introduce the notion of data equity and data ethics in broad philosophical terms, held by a theoretical framework that appeals to a set of key underlying principles, drawing primarily from the extant computer science and statistical/epidemiological literature. We introduce these core concepts and associated evaluation metrics. The discussed concepts include: fairness, accountability, transparency, ethics, privacy, governance, reflexivity, reproducibility, generalizability, representativeness, causality, confounding bias, selection bias, and information bias. The course consists of lectures, homework, paper presentations, discussion sessions, and a final project that involves critical appraisal of an open-source AI/data science tool or prediction model in terms of the principles taught in the course.
+          Introduction to artificial intelligence research, focusing on reasoning and perception. Topics include knowledge representation, predicate calculus, temporal reasoning, vision, robotics, planning, and learning.
         instructors:
-          - text: A. David Paltiel, MBA, PhD
-            href: https://ysph.yale.edu/profile/david-paltiel/
-          - text: Virginia Pitzer, ScD
-            href: https://ysph.yale.edu/profile/virginia-pitzer/
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
-        ranking: "1"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML, Data Science, Statistics/Mathematics"
-        group: https://ysph.yale.edu/research/research-centers-and-initiatives/public-health-modeling-unit/
-        course_site: https://courses.yale.edu/?keyword=PUBH%20580&srcdb=guide25
-  - categories1:
-      - "Yale School of Public Health"
-    categories2:
-      - "Data Science"
-    categories3:
-      - "Course"
-    categories4:
-      - "Summer"
-    tiles:
-      - title: "Yale Summer Course in Public Health Modeling"
-        description: |
-          The Yale School of Public Health’s Summer Course in Public Health Modeling is an exciting opportunity to learn to understand and implement the latest techniques from distinguished Yale faculty and network with an international group of public health researchers.
-          </br>
-          </br>
-          The course is designed to provide researchers, clinicians, industry professionals, and policymakers with the systems-based perspective and analytic tools they need to better understand and manage the complex forces that drive the health of populations. Course topics include prediction and control of infectious disease outbreaks such as COVID-19, optimal decision-making in healthcare delivery, and designing interventions to mitigate the effects of drug overdoses.
-          </br>
-          </br>
-          Course instructors are Yale faculty experts in epidemiology, biostatistics, health policy, and health care operations who have been at the forefront of informing model-guided responses to COVID-19 and other disease threats locally, nationally, and around the world.
-        instructors:
-          - text: Virginia Pitzer, ScD
-            href: https://ysph.yale.edu/profile/virginia-pitzer/
+          - text: Tesca Fitzgerald, PhD
+            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/tesca-fitzgerald
         date-added: 2025-12-04
         date-updated: 2025-12-04
         ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML, Data Science, Statistics/Mathematics"
-        group: https://ysph.yale.edu/research/research-centers-and-initiatives/public-health-modeling-unit/
-        site: https://ysph.yale.edu/school-of-public-health/continuing-education/public-health-modeling/
-  - categories1:
-      - "Yale School of Public Health"
-    categories2:
-      - "Statistics/Mathematics"
-    categories3:
-      - "Lecture Materials"
-    categories4:
-      - "Asynchronous"
-    tiles:
-      - title: "Ordinary Differential Equations (ODE) in R"
-        description: |
-          The Yale School of Public Health’s Summer Course in Public Health Modeling is an exciting opportunity to learn to understand and implement the latest techniques from distinguished Yale faculty and network with an international group of public health researchers.
-          </br>
-          </br>
-          The course is designed to provide researchers, clinicians, industry professionals, and policymakers with the systems-based perspective and analytic tools they need to better understand and manage the complex forces that drive the health of populations. Course topics include prediction and control of infectious disease outbreaks such as COVID-19, optimal decision-making in healthcare delivery, and designing interventions to mitigate the effects of drug overdoses.
-          </br>
-          </br>
-          Course instructors are Yale faculty experts in epidemiology, biostatistics, health policy, and health care operations who have been at the forefront of informing model-guided responses to COVID-19 and other disease threats locally, nationally, and around the world.
-        instructors:
-          - text: Melanie H Chitwood, PhD
-            href: https://ysph.yale.edu/profile/melanie-chitwood/
-          - text: Jiye Kwon, MPH
-            href: https://ysph.yale.edu/profile/jiye-kwon/
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
-        ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML, Data Science, Statistics/Mathematics"
-        group: https://medicine.yale.edu/lab/pitzer/
-        site: https://ysph.yale.edu/school-of-public-health/continuing-education/public-health-modeling/
-        course_site: https://pitzerlab.github.io/IntroODESession/
+        color: "#7A4BA8"
+        topic: "AI/ML, Engineering, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=CPSC%205700&srcdb=202503
   
   # -----------
-  # Region/Affiliation by: Yale School of Medicine
+  # Institutional Home by: School of Engineering & Applied Science
+  
+  # -----------
+  # Institutional Home by: School of Management
+
+  # -----------
+  # Institutional Home by: Yale School of Medicine
   - categories1:
       - "Yale School of Medicine"
     categories2:
@@ -218,104 +332,332 @@ items:
         date-added: 2025-12-04
         date-updated: 2025-12-04
         ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
+        color: "#6EC9E8"
         topic: "AI/ML, Data Science, Statistics/Mathematics"
         group: https://medicine.yale.edu/md-program/student-affairs/student-life/student-groups/
         site: https://medicine.yale.edu/md-program/student-affairs/student-life/student-groups/#ai-in-medicine
-  - categories1:
-      - "Yale School of Medicine"
-    categories2:
-      - "Data Science"
-    categories3:
-      - "Fellowship"
-    categories4:
-      - "N/A"
-    tiles:
-      - title: "Yale University and Boehringer Ingelheim Biomedical Data Science Fellowship Program"
-        description: |
-          Yale University, in partnership with <a href="https://www.boehringer-ingelheim.com/">Boehringer Ingelheim</a>, one of the world’s leading pharmaceutical companies, launched in 2021 a Biomedical Data Science Fellowship program designed to attract and support some of the brightest and most innovative minds in data science from around the world.
-          </br>
-          </br>
-          The program has successfully offered ten competitive fellowships during its initial phase and will expand by recruiting three new fellows in 2025 and two in 2026. Post-doctoral researchers awarded a three-year fellowship will have access to Yale’s world class faculty, cutting edge research programs, various biomedical data repositories, and robust computational resources. Applicants with strong biomedical data science background and research experience are invited to submit research proposals for consideration. If approved for a fellowship, they will be jointly mentored throughout the research process by Yale’s faculty and scientists from Boehringer Ingelheim. In addition to receiving research funding and mentorship, program fellows will be invited to participate in campus and corporate visits, networking events, and annual symposia.
-          </br>
-          </br>
-          The program leverages the expertise of faculty and research members representing diverse disciplines from computational biology, bioinformatics, biomedical informatics, statistics, biostatistics, computer science, mathematics, biomedical engineering, systems biology, precision medicine, and public health informatics.
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
-        ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML, Data Science, Statistics/Mathematics"
-        site: https://medicine.yale.edu/biomedical-data-science-fellowship/apply/
-  - categories1:
-      - "Yale School of Medicine"
-    categories2:
-      - "Data Science"
-      - "Statistics/Mathematics"
-      - "Biomedical Sciences"
-    categories3:
-      - "Fellowship"
-    categories4:
-      - "N/A"
-    tiles:
-      - title: "NIH/NLM Biomedical Informatics and Data Science Training Program"
-        description: |
-          The Biomedical Informatics and Data Science Training Program supports predoctoral and postdoctoral fellows. There are three general areas of emphasis in the training program:
-          </br>
-          </br>
-          1. Clinical informatics - focused in areas of clinical medicine and patient care
-          2. Translational bioinformatics - focused in areas of genomics and proteomics, broadly defined
-          3. Clinical research informatics - focused in areas of clinical trials and data sciences
-          4. Generative AI and large language models - focused on developing and applying AI technologies for healthcare applications, clinical documentation, and biomedical knowledge discovery
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
-        ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML, Data Science, Statistics/Mathematics"
-        group: https://medicine.yale.edu/biomedical-informatics-data-science/
-        site: https://medicine.yale.edu/biomedical-informatics-data-science/education/fellowships/biomedical-informatics-and-data-science-training-program/
-        
+
+
   # -----------
-  # Region/Affiliation by: Yale University
+  # Institutional Home by: School of Public Health
   - categories1:
-      - "Yale University"
+      - "Yale School of Public Health"
+    categories2:
+      - "AI/ML"
+    categories3:
+      - "Lecture Materials"
+    categories4:
+      - "Asynchronous"
+    tiles:
+      - title: "Course Materials for Bootstrap Learning Python with R"
+        description: |
+          This repository houses all of the materials to be presented at the day long course "Bootstrap Learning Python with R," which is presented as a day-long course at the 2019 Joint Statistical Meetings, put on by the American Statistical Association.
+        instructors:
+          - text: Michael Kane, PhD
+            href: https://campuspress.yale.edu/fdstest/michael-j-kane/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#F6D48F"
+        topic: "AI/ML"
+        course_site: https://github.com/kaneplusplus/python-for-r-programmers
+        github: https://kaneplusplus.github.io/python-for-r-programmers/
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "Data Science"
+    categories3:
+      - "Workshop"
+    categories4:
+      - "Asynchronous"
+    tiles:
+      - title: "Getting started with Git in RStudio"
+        description: |
+          An introductory tutorial on using Git within the RStudio Integrated Development Environment. Published on October 26<sup>th</sup>, 2019.
+        instructors:
+          - text: Iris Artin, MMSc, MPH, MEng
+            href: https://iris.artins.org/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#0B1C3B"
+        topic: "Data Science"
+        group: https://medicine.yale.edu/lab/weinberger/
+        site: https://weinbergerlab.gitlab.io/git-going/
+        github: https://github.com/weinbergerlab/git-going
+      - title: "Introduction to R Lab"
+        description: |
+          This tutorial teaches how to manipulate and plot data in R, using qPCR data that were originally saved as an Excel file and imported into R. Published on October 6<sup>th</sup>, 2021.
+        instructors:
+          - text: Daniel Weinberger, PhD
+            href: https://ysph.yale.edu/profile/daniel-weinberger/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#0B1C3B"
+        topic: "Data Science"
+        group: https://medicine.yale.edu/lab/weinberger/
+        github: https://github.com/DanWeinberger/Intro-R-Lab
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "Statistics/Mathematics"
+    categories3:
+      - "Lecture Materials"
+    categories4:
+      - "Asynchronous"
+    tiles:
+      - title: "Ordinary Differential Equations (ODE) in R"
+        description: |
+          This tutorial teaches how to create and implement Susceptible-Infectious (SI) epidemiological models using Ordinary Differential Equations (ODEs) in R, including writing a custom model function for numerical integration. Created for the Yale School of Public Health's Summer Course in Public Health Modeling. Published June 11th, 2024.
+        instructors:
+          - text: Melanie H Chitwood, PhD
+            href: https://ysph.yale.edu/profile/melanie-chitwood/
+          - text: Jiye Kwon, MPH
+            href: https://ysph.yale.edu/profile/jiye-kwon/
+        date-added: 2025-12-04
+        date-updated: 2025-12-04
+        ranking: "2"
+        color: "#F6D48F"
+        topic: "Statistics/Mathematics"
+        group: https://medicine.yale.edu/lab/pitzer/
+        site: https://ysph.yale.edu/school-of-public-health/continuing-education/public-health-modeling/
+        course_site: https://pitzerlab.github.io/IntroODESession/
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "Data Science"
+    categories3:
+      - "Lecture Materials"
+    categories4:
+      - "Asynchronous"
+    tiles:
+      - title: "BIS 557: How to Create an R Package"
+        description: |
+          The goal of these lecture materials is to demonstrate the process of creating an R package for the Yale Biostatistics BIS 557 class. Published on September 9<sup>th</sup>, 2020.
+        instructors:
+          - text: Michael Kane, PhD
+            href: https://campuspress.yale.edu/fdstest/michael-j-kane/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#F6D48F"
+        topic: "Data Science"
+        site: https://kaneplusplus.github.io/bis557/
+        github: https://github.com/kaneplusplus/bis557
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "AI/ML"
+      - "Biomedical/Medicine"
+    categories3:
+      - "Course"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "BIS 568: Applied Artificial Intelligence in Healthcare"
+        description: |
+          Recent advances in machine learning (ML) offer tremendous promise to improve the care of patients. However, few ML applications are currently deployed within healthcare institutions and even fewer provide real value. This course is designed to empower students to overcome common pitfalls in bringing ML to the bedside and aims to provide a holistic approach to the complexities and nuances of ML in the healthcare space. The class focuses on key steps of model development and implementation centered on real-world applications. Students apply what they learn from the lectures, assignments, and readings to identify salient healthcare problems and tackle their solutions through end-to-end data engineering pipelines.
+          </br>
+          </br>
+          Students are expected to be proficient in programming (R, Python, or Julia preferred) and have some prior experience in machine learning including data preprocessing (e.g., Python-Pandas, R- Tidyverse) and the development and validation of ML models (e.g. logistic regression, random forest, XGBoost). Otherwise, permission of the instructor is required.
+        instructors:
+          - text: Wade Schulz, MD, PhD
+            href: https://medicine.yale.edu/profile/wade-schulz/
+        date-added: 2025-12-04
+        date-updated: 2025-12-04
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Biomedical/Medicine"
+        course_site: https://courses.yale.edu/?keyword=BIS%20565&srcdb=guide25
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "AI/ML"
+      - "Public Health"
+      - "Statistics/Mathematics"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+    tiles:
+      - title: "EMD 538 Quantitative Methods for Infectious Disease Epidemiology"
+        description: |
+          This course provides an overview of statistical and analytical methods that apply specifically to infectious diseases. The assumption of independent outcomes among individuals that underlies most traditional statistical methods often does not apply to infections that can be transmitted from person to person. Therefore, novel methods are often needed to address the unique challenges posed by infectious disease data. Topics include analysis of outbreak data, estimation of vaccine efficacy, time series methods, and Markov models. The course consists of lectures and computer labs in which students gain experience analyzing example problems using a flexible computer programming language (MATLAB).
+        instructors:
+          - text: Virginia Pitzer, ScD
+            href: https://ysph.yale.edu/profile/virginia-pitzer/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Public Health, Statistics/Mathematics"
+        group: https://medicine.yale.edu/lab/pitzer/
+        course_site: https://courses.yale.edu/?keyword=EMD%20538&srcdb=guide25
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "Data Science"
+      - "Public Health"
+      - "Statistics/Mathematics"
+    categories3:
+      - "Lecture Materials"
+    categories4:
+      - "Asynchronous"
+    tiles:
+      - title: "Quantitative Methods in Infectious Disease - Time Series Analysis"
+        description: |
+          These are guest lecture materials from Dr. Weinberger for EMD 538, a course focused on specialized statistical methods for infectious disease data that accounts for person-to-person transmission patterns. The course covers outbreak analysis, vaccine efficacy estimation, time series methods, and Markov models through lectures and hands-on MATLAB labs. Published on November 13<sup>th</sup>, 2023.
+        instructors:
+          - text: Daniel Weinberger, PhD
+            href: https://ysph.yale.edu/profile/daniel-weinberger/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
+        ranking: "2"
+        color: "#F6D48F"
+        topic: "Data Science, Public Health, Statistics/Mathematics"
+        group: https://medicine.yale.edu/lab/weinberger/
+        course_site: https://courses.yale.edu/?keyword=EMD%20538&srcdb=guide25
+        github: https://github.com/weinbergerlab/quant_meth_id
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "AI/ML"
+      - "Biomedical/Medicine"
+      - "Statistics/Mathematics"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+    tiles:
+      - title: "BIS 555: Machine Learning with Biomedical Data"
+        description: |
+          This course covers many popular topics in machine learning and statistics that are widely used for the exploration of biomedical data. Techniques covered include different linear prediction methods, random forest, boosting, neural networks, and some recent progress on model inference in high dimensions, as well as dimension reduction and clustering. Various examples using biomedical data—e.g., microarray gene expression data, single-cell RNA-Seq data—are provided. The emphasis is on the statistical aspects of different machine-learning methods and their applications to problems in computational biology.
+        instructors:
+          - text: Leying Guan, PhD
+            href: https://ysph.yale.edu/profile/leying-guan/
+        date-added: 2025-12-04
+        date-updated: 2025-12-04
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Biomedical/Medicine, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=BIS%20555&srcdb=202503
+  - categories1:
+      - "Yale School of Public Health"
     categories2:
       - "AI/ML"
       - "Data Science"
+      - "Ethics"
     categories3:
       - "Course"
     categories4:
       - "Fall"
     tiles:
-      - title: "CPSC 5380: Big Data Systems: Trends and Challenges"
+      - title: "Teaching Workshops and Journal Clubs for Faculty"
         description: |
-          Today’s Internet-scale applications and cloud services generate massive amounts of data. At the same time, the availability of inexpensive storage has made it possible for these services and applications to collect and store every piece of data they generate, in the hopes of improving their services by analyzing the collected data. This introduces interesting new opportunities and challenges designing systems for collecting, analyzing, and serving the so-called big data. This course looks at technology trends that have paved the way for big data applications, surveys state-of-the-art systems for storage and processing of big data, and considers future research directions driven by open research problems. Our discussions span topics such as cluster architecture, big data analytics stacks, scheduling and resource management, batch and stream analytics, graph processing, ML/AI frameworks, and serverless platforms and disaggregated architectures.
+          Find a variety of lecture materials, workshops, and panel discussions for Yale School of Public Health (YSPH) instructors, covering topics such as AI use in the classroom, creating inclusive environments, gamification, AI-proofing courses, and digital accessibility training.
         instructors:
-          - text: Anurag Khandelwal, PhD
-            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/anurag-khandelwal
-        date-added: 2025-12-04
-        date-updated: 2025-12-04
+          - text: Mike Honsberger, PhD
+            href: https://ysph.yale.edu/profile/michael-honsberger/
+        date-added: 2025-12-16
+        date-updated: 2025-12-16
         ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML, Data Science"
-        course_site: https://courses.yale.edu/?keyword=CPSC%205380&srcdb=202503
+        color: "#7A4BA8"
+        topic: "AI/ML, Data Science, Ethics"
+        group: https://ysph.yale.edu/myysph/faculty/academic-affairs/
+        course_site: https://ysph.yale.edu/myysph/faculty/academic-affairs/excellence/workshops/
   - categories1:
-      - "Yale University"
+      - "Yale School of Public Health"
     categories2:
       - "AI/ML"
+      - "Data Science"
+      - "Biomedical/Medicine"
+      - "Public Health"
+      - "Statistics/Mathematics"
+    categories3:
+      - "Seminar"
+    categories4:
+      - "Fall"
+      - "Spring"
+    tiles:
+      - title: "PUBH 580 Seminar for Modeling in Public Health"
+        description: |
+          With the explosion of conversational generative artificial intelligence (AI) tools, such as ChatGPT, Gemini, Llama, Claude Sonnet, DeepSeek, and many others, innovations in data science are greatly influencing day-to-day decision making of the public including decision regarding health, well-being, prevention, treatment and care. This new course  thematically belongs to the intersectional field of critical data studies, data science, and public health. Critical data studies is an interdisciplinary field focused on the social, cultural, ethical, and epistemological aspects of data. We first define some of the fundamental technical terms and tools in modern data science, machine learning (ML), and AI such as random forest, neural networks, transformer, auto-encoder, embeddings, stable diffusion process, large language models/foundation models, reinforcement learning, and prediction-powered inference. We then introduce the notion of data equity and data ethics in broad philosophical terms, held by a theoretical framework that appeals to a set of key underlying principles, drawing primarily from the extant computer science and statistical/epidemiological literature. We introduce these core concepts and associated evaluation metrics. The discussed concepts include: fairness, accountability, transparency, ethics, privacy, governance, reflexivity, reproducibility, generalizability, representativeness, causality, confounding bias, selection bias, and information bias. The course consists of lectures, homework, paper presentations, discussion sessions, and a final project that involves critical appraisal of an open-source AI/data science tool or prediction model in terms of the principles taught in the course.
+        instructors:
+          - text: A. David Paltiel, MBA, PhD
+            href: https://ysph.yale.edu/profile/david-paltiel/
+          - text: Virginia Pitzer, ScD
+            href: https://ysph.yale.edu/profile/virginia-pitzer/
+        date-added: 2025-12-04
+        date-updated: 2025-12-04
+        ranking: "1"
+        color: "#6EC9E8"
+        topic: "AI/ML, Data Science, Biomedical/Medicine, Public Health, Statistics/Mathematics"
+        group: https://ysph.yale.edu/research/research-centers-and-initiatives/public-health-modeling-unit/
+        course_site: https://courses.yale.edu/?keyword=PUBH%20580&srcdb=guide25
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "AI/ML"
+      - "Data Science"
+      - "Biomedical/Medicine"
+      - "Ethics"
+      - "Public Health"
+      - "Statistics/Mathematics"
     categories3:
       - "Course"
     categories4:
-      - "Fall"
+      - "Summer"
     tiles:
-      - title: "CPSC 5700: Artificial Intelligence "
+      - title: "Yale Summer Course in Public Health Modeling"
         description: |
-          Introduction to artificial intelligence research, focusing on reasoning and perception. Topics include knowledge representation, predicate calculus, temporal reasoning, vision, robotics, planning, and learning.
+          The Yale School of Public Health’s Summer Course in Public Health Modeling is an exciting opportunity to learn to understand and implement the latest techniques from distinguished Yale faculty and network with an international group of public health researchers.
+          </br>
+          </br>
+          The course is designed to provide researchers, clinicians, industry professionals, and policymakers with the systems-based perspective and analytic tools they need to better understand and manage the complex forces that drive the health of populations. Course topics include prediction and control of infectious disease outbreaks such as COVID-19, optimal decision-making in healthcare delivery, and designing interventions to mitigate the effects of drug overdoses.
+          </br>
+          </br>
+          Course instructors are Yale faculty experts in epidemiology, biostatistics, health policy, and health care operations who have been at the forefront of informing model-guided responses to COVID-19 and other disease threats locally, nationally, and around the world.
         instructors:
-          - text: Tesca Fitzgerald, PhD
-            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/tesca-fitzgerald
+          - text: Virginia Pitzer, ScD
+            href: https://ysph.yale.edu/profile/virginia-pitzer/
         date-added: 2025-12-04
         date-updated: 2025-12-04
         ranking: "2"
-        image: ../Images/DSDE Identity/AdobeStock_323829966 cropped.jpeg
-        topic: "AI/ML"
-        course_site: https://courses.yale.edu/?keyword=CPSC%205700&srcdb=202503
+        color: "#7A4BA8"
+        topic: "AI/ML, Data Science, Biomedical/Medicine, Ethics, Public Health, Statistics/Mathematics"
+        group: https://ysph.yale.edu/research/research-centers-and-initiatives/public-health-modeling-unit/
+        site: https://ysph.yale.edu/school-of-public-health/continuing-education/public-health-modeling/
+  - categories1:
+      - "Yale School of Public Health"
+    categories2:
+      - "AI/ML"
+      - "Data Science"
+      - "Biomedical/Medicine"
+      - "Ethics"
+      - "Public Health"
+      - "Social Sciences"
+      - "Statistics/Mathematics"
+    categories3:
+      - "Course"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "BIS 565: The Role of Ethics and Equity in Data Science and AI"
+        description: |
+          With the explosion of conversational generative artificial intelligence (AI) tools, such as ChatGPT, Gemini, Llama, Claude Sonnet, DeepSeek, and many others, innovations in data science are greatly influencing day-to-day decision making of the public including decision regarding health, well-being, prevention, treatment and care. This new course  thematically belongs to the intersectional field of critical data studies, data science, and public health. Critical data studies is an interdisciplinary field focused on the social, cultural, ethical, and epistemological aspects of data. We first define some of the fundamental technical terms and tools in modern data science, machine learning (ML), and AI such as random forest, neural networks, transformer, auto-encoder, embeddings, stable diffusion process, large language models/foundation models, reinforcement learning, and prediction-powered inference. We then introduce the notion of data equity and data ethics in broad philosophical terms, held by a theoretical framework that appeals to a set of key underlying principles, drawing primarily from the extant computer science and statistical/epidemiological literature. We introduce these core concepts and associated evaluation metrics. The discussed concepts include: fairness, accountability, transparency, ethics, privacy, governance, reflexivity, reproducibility, generalizability, representativeness, causality, confounding bias, selection bias, and information bias. The course consists of lectures, homework, paper presentations, discussion sessions, and a final project that involves critical appraisal of an open-source AI/data science tool or prediction model in terms of the principles taught in the course.
+        instructors:
+          - text: Bhramar Mukherjee, PhD
+            href: https://ysph.yale.edu/profile/bhramar-mukherjee/
+        date-added: 2025-12-04
+        date-updated: 2025-12-04
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Data Science, Biomedical/Medicine, Ethics, Public Health, Social Sciences, Statistics/Mathematics"
+        course_site: https://courses.yale.edu/?keyword=BIS%20565&srcdb=guide25
+
+
+  # -----------
+  # Institutional Home by: Yale College
+  
+  
