@@ -69,6 +69,29 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <!--
+ * This script integrates Google Analytics with your webpage, enabling you to 
+ * track and analyze visitor traffic.
+ * 
+ * It includes the following features:
+ *    1. Asynchronously loading the Google Analytics tracking library.
+ *    2. Setting up the global `dataLayer` array used by Google Analytics.
+ *    3. Defining the `gtag` function for configuring and sending data to Google Analytics.
+ *    4. Initializing Google Analytics with your tracking ID.
+ *
+ * Author: Shelby Golden, M.S.
+ *   Date: December 2025
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-D36ENXMEY5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D36ENXMEY5');
+</script>
+<!--
  * This script provides the following functionalities:
  * 
  * 1. Modal Image Viewer with Zoom and Pan:
