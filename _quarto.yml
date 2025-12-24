@@ -56,7 +56,7 @@ website:
 format:
   html:
     include-in-header: 
-      #- _includes/google_analytics.html
+      - _includes/google_analytics.html
       - _includes/functional_scripts.html
       #- _includes/feedback_popup.html
     header-includes:
