@@ -470,9 +470,175 @@ items:
   
   # -----------
   # Institutional Home by: School of Engineering & Applied Science
-  
+  - categories1:
+      - "School of Engineering & Applied Science"
+    categories2:
+      - "Statistics/Data Science"
+    categories3:
+      - "Fellowship"
+    categories4:
+      - "N/A"
+    tiles:
+      - title: "Peter Salovey and Marta Moret Data Science Fellows Program"
+        description: |
+          Welcome to the Peter Salovey and Marta Moret Data Science Fellows Program, a unique fellowship for Yale University PhD students. Established in 2025 with a generous endowment, we aim to inspire, support, and promote high-quality, impactful research at the intersection of data science and other academic fields. Through tailored opportunities for skill development, training, and networking, PhDs from any discipline are equipped to address today’s most pressing challenges through the use of data science. Beginning March 2026, Yale graduate students are invited to apply to join our community of innovators and scholars.
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#D58BE8"
+        topic: "Statistics/Data Science"
+        group: https://fds.yale.edu/
+        site: https://fds.yale.edu/fellows/
+        
   # -----------
   # Institutional Home by: School of Management
+  - categories1:
+      - "School of Management"
+    categories2:
+      - "AI/ML"
+    categories3:
+      - "Course"
+    categories4:
+      - "Fall"
+    tiles:
+      - title: "MGT 695: Intro to AI Applications"
+        description: |
+          Introduction to AI Applications' demystifies the core principles and practical applications of artificial intelligence for students with introductory programming experience. Covering essential topics like machine learning models, data handling, ethical AI use, and real-world problem-solving with AI, this course incorporates hands-on projects to foster an intuitive understanding of AI's capabilities and limitations. Students will emerge from the class with foundational AI knowledge, ready to apply AI solutions across various domains and explore more specialized AI disciplines. This course is cross-listed with Computer Science and will follow the Yale College academic calendar.
+        instructors:
+          - text: Xiuye (Sue) Chen, PhD
+            href: https://engineering.yale.edu/research-and-faculty/faculty-directory/xiuye-chen
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML"
+        course_site: https://courses.yale.edu/?keyword=MGT%20695&srcdb=guide25
+      - title: "MGT 802: Large Language Models"
+        description: ""
+        instructors:
+          - text: Kyle Jensen, PhD
+            href: https://som.yale.edu/faculty-research/faculty-directory/kyle-jensen
+          - text: K. Sudhir, MS, Mtech, PhD
+            href: https://som.yale.edu/faculty-research/faculty-directory/k-sudhir
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML"
+        course_site: https://courses.yale.edu/?keyword=MGT%20802&srcdb=guide25
+  - categories1:
+      - "School of Management"
+    categories2:
+      - "AI/ML"
+      - "Management/Business"
+    categories3:
+      - "Course"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "MGT 554: AI for Business Decisions"
+        description: |
+          Artificial Intelligence (AI) is revolutionizing today’s companies and industries. This course provides an in-depth exploration of the fundamental principles, algorithms, and applications of AI, with a special focus on recognizing and circumventing the numerous pitfalls that can lead to misguided managerial decisions and insights. Through a blend of lectures, case studies, and team discussions, students will learn to apply AI algorithms and methodologies to solve real-world business problems. Students will gain skills in discovering patterns, making predictions, and generating insights to support business decision-making. With a strong emphasis on practical learning through real-world examples and case studies, students will develop a nuanced understanding of the context and complexities of AI models, enabling them to navigate AI applications effectively while avoiding common pitfalls.
+        instructors:
+          - text: Tong Wang, PhD
+            href: https://som.yale.edu/faculty-research/faculty-directory/tong-wang
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Management/Business"
+        course_site: https://courses.yale.edu/?keyword=MGT%20554&srcdb=guide25
+      - title: "MGT 853: AI Strategy & Marketing"
+        description: |
+          Artificial Intelligence is a general-purpose technology which has the potential to transform many aspects of business and society. In business, the impact ranges from commonplace predictive improvements at one end of the spectrum to opportunities for creating entirely new markets at the other. As background, the course will briefly introduce students to Artificial Intelligence / Machine Learning methods comprising of Unsupervised, Supervised and Reinforcement Learning. Through a combination of lectures and case studies, we will evaluate how to integrate AI into decision making, and examine the strategic choices facing companies developing and using AI / ML technologies. We will evaluate how both consumers and decision-makers evaluate decisions made by AI systems, and the feasibility of explainable AI. The course will also examine issues at the intersection of AI and Society including fairness and bias that are proving to be especially challenging, and an understanding of how both consumers and decision-makers evaluate decisions made by AI systems. Note: This is a new course currently under development, so there is no syllabus currently available. The syllabus will be available and posted to canvas and the professor’s website when it becomes available during the spring-1 term.
+        instructors:
+          - text: Vineet Kumar, PhD
+            href: https://som.yale.edu/faculty-research/faculty-directory/vineet-kumar
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Management/Business"
+        course_site: https://courses.yale.edu/?keyword=MGT%20853&srcdb=guide25
+      - title: "MGT 860: Generative AI for Managers"
+        description: |
+          This course equips future managers to understand, evaluate, and lead the integration of Generative AI solutions within organizations. It offers a practical overview of foundational models such as GPT-4, Retrieval-Augmented Generation, and Agentic AI and help students to effectively use prompt engineering to enhance workplace productivity. Students will explore use cases across customer-facing and organizational activities and learn frameworks for selecting and implementing AI solutions that maximize organizational value while addressing ethical considerations. The course features lectures, case studies, guest speakers, and a final project where students design and present a tailored Generative AI use case in a domain of interest.
+        instructors:
+          - text: K. Sudhir
+            href: https://som.yale.edu/faculty-research/faculty-directory/k-sudhir
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Management/Business"
+        course_site: https://courses.yale.edu/?keyword=MGT%20860&srcdb=guide25
+  - categories1:
+      - "School of Management"
+    categories2:
+      - "AI/ML"
+      - "Social Sciences"
+    categories3:
+      - "Course"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "MGT 575: Generative AI and Social Media"
+        description: |
+          This course equips students with the tools and techniques of generative AI, focusing on its transformative applications for social media analysis and content creation. Emphasizing practical, hands-on learning, the curriculum trains students to leverage AI for analyzing, designing, and optimizing social media strategies. Key topics include: 1. Building social media apps for sentiment analysis, influencer identification, and audience segmentation 2. Harnessing generative AI to craft compelling text and visual content tailored to specific audiences 3. Automating and optimizing social media campaigns to boost engagement and impact Students will work extensively with advanced AI tools such as ChatGPT, gaining experience in analysis, content generation, and app development. Course assignments and projects are grounded in real-world social media datasets, culminating in a group project where students will create a social media application powered by generative AI. As a fully project-based course, there are no exams. The assignments and projects are designed to be accessible to all students, regardless of prior coding experience, making it an ideal opportunity to develop expertise in applying generative AI to the dynamic field of social media.
+        instructors:
+          - text: Tauhid Zaman, PhD, MEng
+            href: https://som.yale.edu/faculty-research/faculty-directory/tauhid-zaman
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Social Sciences"
+        course_site: https://courses.yale.edu/?keyword=MGT%20575&srcdb=guide25
+  - categories1:
+      - "School of Management"
+    categories2:
+      - "Statistics/Data Science"
+      - "Management/Business"
+    categories3:
+      - "Course"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "MGT 819: Data Science"
+        description: |
+          Cheap storage and computing power have enabled the gathering and analysis of an unprecedented amount of data on everything from genetic health risk profiles to real-time Wall Street diaper consumption. To take advantage of these massive datasets, new statistical tools and ideas have been developed and this body of knowledge is sometimes referred to as Data Science. The aim of this course is to provide a gentle tour of the business and industry applications of data science. Through the examples we will study, you will gain an intuitive understanding of the underlying data analytic techniques, which are often applicable to a wider class of problems. After completing this course you will have developed an appreciation for what opportunities exist for use of data within your organization.
+        instructors:
+          - text: Vahideh Hosseinikhah Manshadi, MS, PhD
+            href: https://som.yale.edu/faculty-research/faculty-directory/vahideh-manshadi
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "Statistics/Data Science, Management/Business"
+        course_site: https://courses.yale.edu/?keyword=MGT%20819&srcdb=guide25
+  - categories1:
+      - "School of Management"
+    categories2:
+      - "AI/ML"
+      - "Statistics/Data Science"
+      - "Management/Business"
+    categories3:
+      - "Course"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "MGT 899: Generative AI & Entrepreneurship"
+        description: |
+          The advent of Generative AI has revolutionized industries by enabling the creation of new content, solutions, and business models. In this course, we will explore how entrepreneurs can harness the power of Generative AI to innovate, build scalable ventures, and drive competitive advantage. Through a blend of theory, hands-on work, and market analysis, students will learn how to leverage AI to develop innovative products and build AI-driven businesses. Our course delves into the foundational principles of constructing, deploying, and managing Generative AI systems in real-world scenarios. We'll explore widely used concepts, techniques, and frameworks, such as prompt engineering, working with external structured and unstructured datasets, knowledge extraction, agentic workflows, multimedia search and generation, code generation, chatbots, etc. Additionally, we'll delve into various aspects of LLMOps, with a particular emphasis on metrics for evaluating Generative AI systems. We’ll also explore certain strategies for enhancing performance and accuracy, such as fine-tuning and Graph-RAG. Finally, we’ll analyze regulatory and ethical considerations in using AI for business. In each lecture, we will go through the concepts, techniques, and frameworks, followed by an analysis of entrepreneurial opportunities in the space. This will include a review of some sample companies in the space. We will explore the opportunity for startups to disrupt different industries and technology spaces, while at the same time, examining the dangers that startups have of themselves getting disrupted by bigger players. As a result, by the end of the course, students will get a wide view of the landscape of Gen AI companies and the opportunities and challenges that exist.
+        instructors:
+          - text: Anand Ranganathan, PhD
+            href: https://som.yale.edu/faculty-research/faculty-directory/anand-ranganathan
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML, Statistics/Data Science, Management/Business"
+        course_site: https://courses.yale.edu/?keyword=MGT%20899&srcdb=guide25
   
   # -----------
   # Institutional Home by: Yale School of Medicine
@@ -861,5 +1027,71 @@ items:
 
   # -----------
   # Institutional Home by: Yale College
+  - categories1:
+      - "Yale College"
+    categories2:
+      - "AI/ML"
+    categories3:
+      - "Symposium"
+    categories4:
+      - "Spring"
+    tiles:
+      - title: "AI at Yale Symposium"
+        description: |
+          Please save the date for From Innovation to Impact: AI at Yale, the university’s second campus-wide interdisciplinary AI symposium, on April 28, 2026, in Kline Tower.
+          </br>
+          </br>
+          Organized by the Office of the Provost, this event invites faculty, students, and staff to share innovations, applications, impacts, and critical perspectives related to machine learning and generative AI. Students, faculty, and staff will showcase their discoveries and insights through lightning talks, poster sessions, panels, demonstrations, performances, and more.
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#81EC86"
+        topic: "AI/ML"
+        group: https://ai.yale.edu/
+        site: https://ai.yale.edu/events/2026-04-28-save-the-date-ai-at-yale-symposium-2026
+  - categories1:
+      - "Yale College"
+    categories2:
+      - "AI/ML"
+    categories3:
+      - "Course"
+    categories4:
+      - "Asynchronous"
+    tiles:
+      - title: "Learn About AI"
+        description: |
+          Here you will find videos to help get you started using AI chatbots, along with explanations of key terms you might encounter when interacting with AI tools. These resources include definitions and practical examples to enhance your understanding. Additionally, you’ll find learning courses designed to deepen your knowledge and skills in using AI effectively. 
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#7A4BA8"
+        topic: "AI/ML"
+        group: https://ai.yale.edu/
+        site: https://ai.yale.edu/guidance/learn-about-ai
+  - categories1:
+      - "Yale College"
+    categories2:
+      - "AI/ML"
+      - "Statistics/Data Science"
+    categories3:
+      - "Seminar"
+    categories4:
+      - "Fall"
+      - "Spring"
+    tiles:
+      - title: "Virtual AI Brown Bag Series"
+        description: |
+          DISSC offers a monthly virtual brown bag during the academic year for research support facing staff to explore and discuss use cases of machine learning and LLMs. Other members of the Yale community are welcome to attend. Contact molly.aunger@yale.edu to join the call.
+        instructors:
+          - text: Nicholas Warren
+            href: https://dissc.yale.edu/profile/nicholas-warren
+        date-added: 2026-02-11
+        date-updated: 2026-02-11
+        ranking: "2"
+        color: "#6EC9E8"
+        topic: "AI/ML"
+        group: https://dissc.yale.edu/
+        site: https://dissc.yale.edu/dissc-programs/artificial-intelligence-and-machine-learning
+  
   
   

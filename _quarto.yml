@@ -21,7 +21,7 @@ website:
         href: Pages/policies.qmd
       - text: "Courses & Programs"
         href: Pages/resources.qmd
-      - text: "Yale's AI Tools"
+      - text: "AI Tools"
         href: Pages/tools.qmd
       - text: "About Us"
         href: Pages/about-us.qmd
