@@ -204,7 +204,7 @@ div.callout-important.callout {
 /* Index page banner styling */
 
 .landing-banner {
-    background-image: url('Images/AdobeStock_323829966.jpeg');
+    background-image: url('Images/AdobeStock_323829966_cropped.jpeg');
     background-size: cover; /* Ensure the image covers the banner area */
     background-position: left center; /* Align the background image to center-left */
     width: 100vw; /* Extend the banner to some width of the viewport */
@@ -835,7 +835,6 @@ ol, ul {
 
 /* Include this CSS in your main CSS file */
 
-/* Sidebar wrapper styling for larger screens */
 .sidebar-wrapper {
   width: 290px; /* Default to open state for larger screens */
   padding: 10px;
@@ -874,6 +873,22 @@ ol, ul {
   margin-top: -20px !important;
 }
 
+.collapsible-content {
+  display: none; /* Hidden by default */
+  padding: 10px 0;
+}
+.collapsible-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  transition: transform 0.3s ease !important;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
 /* Mobile adjustments */
 @media (max-width: 480px) {
   .sidebar-wrapper {
@@ -891,7 +906,7 @@ ol, ul {
   }
   .sidebar-toggler {
     display: block; /* Show toggler on small screens */
-    right: -10px; /* Adjusted to move a few points to the left for small screens */
+    right: -15px !important; /* Adjusted to move a few points to the left for small screens */
   }
 }
 
@@ -1439,7 +1454,7 @@ ol, ul {
 .tile_static_page .text-box {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 2px; /* Rounded corners */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better readability */
 }
 
