@@ -31,7 +31,7 @@ csl: ../Code/nature.csl
         </div>
         <div class="tile_static_page" id="tile2">
             <canvas class="network-canvas"></canvas>
-            <a href="https://poorvucenter.yale.edu/ai-guidance-for-students" title="Resources page">
+            <a href="https://poorvucenter.yale.edu/ai-guidance-for-students" title="Poorvu Center - Students">
                 <div class="content">
                     <div class="text-box">
                         <h1>AI Guidance for Students</h1>
@@ -44,7 +44,7 @@ csl: ../Code/nature.csl
         </div>
         <div class="tile_static_page" id="tile3">
             <canvas class="network-canvas"></canvas>
-            <a href="https://poorvucenter.yale.edu/teaching/teaching-resource-library/ai-guidance-for-teachers" title="Resources page">
+            <a href="https://poorvucenter.yale.edu/teaching/teaching-resource-library/ai-guidance-for-teachers" title="Poorvu Center - Teachers">
                 <div class="content">
                     <div class="text-box">
                         <h1>AI Guidance for Teachers</h1>
@@ -57,7 +57,7 @@ csl: ../Code/nature.csl
         </div>
         <div class="tile_static_page" id="tile4">
             <canvas class="network-canvas"></canvas>
-            <a href="https://library.yale.edu/help-and-research-support/research-support/using-ai-research" title="Resources page">
+            <a href="https://library.yale.edu/help-and-research-support/research-support/using-ai-research" title="Yale Library">
                 <div class="content">
                     <div class="text-box">
                         <h1>Using AI in Research</h1>
@@ -70,7 +70,7 @@ csl: ../Code/nature.csl
         </div>
         <div class="tile_static_page" id="tile5">
             <canvas class="network-canvas"></canvas>
-            <a href="https://iris.paho.org/items/b98d9c0f-6008-4b78-9066-01e1e81c29c5" title="Resources page">
+            <a href="https://iris.paho.org/items/b98d9c0f-6008-4b78-9066-01e1e81c29c5" title="PAHO">
                 <div class="content">
                     <div class="text-box">
                         <h1>AI Prompt Design for Public Health</h1>
