@@ -31,16 +31,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Define variables
     let animationFrameId; // Store the animation frame ID
     let nodes = []; // Array to store nodes
-    const numNodes = 20; // Number of nodes
+    const numNodes = 17; // Number of nodes
     const maxDistance = 150; // Maximum distance for drawing lines
     const baseNodeSize = 10; // Base size of nodes (increased)
-    const basePathWidth = 3; // Base path width for lines (increased)
+    const basePathWidth = 7; // Base path width for lines (increased)
     const borderWidth = 1; // Width of node borders
     const borderColor = "#F0F0F0"; // Border color for nodes
     const speedMultiplier = 0.2; // Lower value for slower movement
     const nodeColor = getComputedStyle(document.documentElement).getPropertyValue('--dsde-purple'); // Adjusted color
     const perspectiveDepth = 100; // Depth for perspective effect
-    const minNodeSize = 6; // Minimum node size (increased)
+    const minNodeSize = 10; // Minimum node size (increased)
     const backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--dsde-purple'); // Background color
 
     /**
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ctx.beginPath();
         ctx.arc(node.x, node.y, nodeSize, 0, Math.PI * 2);
         ctx.fillStyle = nodeColor;
-        ctx.globalAlpha = 0.25; // Adjust node opacity (more translucent)
+        ctx.globalAlpha = 0.3; // Adjust node opacity (more translucent)
         ctx.fill();
         ctx.lineWidth = borderWidth;
         ctx.strokeStyle = borderColor;

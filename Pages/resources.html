@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dddedb441ecc06b8442773ea129a78fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a237b625bb3fdaf8485e678a5a6b8c25.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -669,7 +669,12 @@ window.Quarto = {
   <div>
     <div class="main-container">
       <div class="sidebar-wrapper">
+        <button class="sidebar-toggler">☰</button>
         <aside class="sidebar">
+          
+          
+            
+  
           <div class="sort-wrapper">
             <select id="sortOptions" class="form-control" style="width: 94%;">
               <option value="default" selected="">No sorting</option>
@@ -679,181 +684,197 @@ window.Quarto = {
               <option value="date-asc">Date Updated: Oldest to Newest</option>
             </select>
           </div>
-
+  
           <!-- Affiliation filter -->
           <form id="categoryFilter1" class="form">
-            <h5>Institutional Home</h5>
-            
+            <h5 class="collapsible-header">Institutional Home
+              <span class="arrow">&gt;</span>
+            </h5>
+            <div class="collapsible-content">
               
+                
+                
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category1" value="Graduate%20School%20of%20Arts%20%26%20Sciences" id="category1-Graduate%20School%20of%20Arts%20%26%20Sciences">
+                    <label for="category1-Graduate%20School%20of%20Arts%20%26%20Sciences" style="margin-bottom: 0px;">Graduate School of Arts &amp; Sciences</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category1" value="School%20of%20Engineering%20%26%20Applied%20Science" id="category1-School%20of%20Engineering%20%26%20Applied%20Science">
+                    <label for="category1-School%20of%20Engineering%20%26%20Applied%20Science" style="margin-bottom: 0px;">School of Engineering &amp; Applied Science</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category1" value="School%20of%20Management" id="category1-School%20of%20Management">
+                    <label for="category1-School%20of%20Management" style="margin-bottom: 0px;">School of Management</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category1" value="Yale%20School%20of%20Medicine" id="category1-Yale%20School%20of%20Medicine">
+                    <label for="category1-Yale%20School%20of%20Medicine" style="margin-bottom: 0px;">Yale School of Medicine</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category1" value="Yale%20School%20of%20Public%20Health" id="category1-Yale%20School%20of%20Public%20Health">
+                    <label for="category1-Yale%20School%20of%20Public%20Health" style="margin-bottom: 0px;">Yale School of Public Health</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category1" value="Yale%20College" id="category1-Yale%20College">
+                    <label for="category1-Yale%20College" style="margin-bottom: 0px;">Yale College</label>
+                  </div>
+                
               
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category1" value="Graduate%20School%20of%20Arts%20%26%20Sciences" id="category1-Graduate%20School%20of%20Arts%20%26%20Sciences">
-                  <label for="category1-Graduate%20School%20of%20Arts%20%26%20Sciences" style="margin-bottom: 0px;">Graduate School of Arts &amp; Sciences</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category1" value="School%20of%20Engineering%20%26%20Applied%20Science" id="category1-School%20of%20Engineering%20%26%20Applied%20Science">
-                  <label for="category1-School%20of%20Engineering%20%26%20Applied%20Science" style="margin-bottom: 0px;">School of Engineering &amp; Applied Science</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category1" value="School%20of%20Management" id="category1-School%20of%20Management">
-                  <label for="category1-School%20of%20Management" style="margin-bottom: 0px;">School of Management</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category1" value="Yale%20School%20of%20Medicine" id="category1-Yale%20School%20of%20Medicine">
-                  <label for="category1-Yale%20School%20of%20Medicine" style="margin-bottom: 0px;">Yale School of Medicine</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category1" value="Yale%20School%20of%20Public%20Health" id="category1-Yale%20School%20of%20Public%20Health">
-                  <label for="category1-Yale%20School%20of%20Public%20Health" style="margin-bottom: 0px;">Yale School of Public Health</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category1" value="Yale%20College" id="category1-Yale%20College">
-                  <label for="category1-Yale%20College" style="margin-bottom: 0px;">Yale College</label>
-                </div>
-              
-            
+            </div>
           </form>
-
+  
           <br>
-
+  
           <!-- Content Type filter -->
           <form id="categoryFilter2" class="form">
-            <h5>Content Type</h5>
-            
+            <h5 class="collapsible-header">Content Type
+              <span class="arrow">&gt;</span>
+            </h5>
+            <div class="collapsible-content">
               
+                
+                
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="AI%2FML" id="category2-AI%2FML">
+                    <label for="category2-AI%2FML" style="margin-bottom: 0px;">AI/ML</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Statistics%2FData%20Science" id="category2-Statistics%2FData%20Science">
+                    <label for="category2-Statistics%2FData%20Science" style="margin-bottom: 0px;">Statistics/Data Science</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Ethics" id="category2-Ethics">
+                    <label for="category2-Ethics" style="margin-bottom: 0px;">Ethics</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Social%20Sciences" id="category2-Social%20Sciences">
+                    <label for="category2-Social%20Sciences" style="margin-bottom: 0px;">Social Sciences</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Engineering" id="category2-Engineering">
+                    <label for="category2-Engineering" style="margin-bottom: 0px;">Engineering</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Physical%20and%20Natural%20Sciences" id="category2-Physical%20and%20Natural%20Sciences">
+                    <label for="category2-Physical%20and%20Natural%20Sciences" style="margin-bottom: 0px;">Physical and Natural Sciences</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Medicine%2FBiomedical%20Sciences" id="category2-Medicine%2FBiomedical%20Sciences">
+                    <label for="category2-Medicine%2FBiomedical%20Sciences" style="margin-bottom: 0px;">Medicine/Biomedical Sciences</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Humanities" id="category2-Humanities">
+                    <label for="category2-Humanities" style="margin-bottom: 0px;">Humanities</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Management%2FBusiness" id="category2-Management%2FBusiness">
+                    <label for="category2-Management%2FBusiness" style="margin-bottom: 0px;">Management/Business</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="Public%20Health%2FBiostatistics" id="category2-Public%20Health%2FBiostatistics">
+                    <label for="category2-Public%20Health%2FBiostatistics" style="margin-bottom: 0px;">Public Health/Biostatistics</label>
+                  </div>
+                
               
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="AI%2FML" id="category2-AI%2FML">
-                  <label for="category2-AI%2FML" style="margin-bottom: 0px;">AI/ML</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Statistics%2FData%20Science" id="category2-Statistics%2FData%20Science">
-                  <label for="category2-Statistics%2FData%20Science" style="margin-bottom: 0px;">Statistics/Data Science</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Ethics" id="category2-Ethics">
-                  <label for="category2-Ethics" style="margin-bottom: 0px;">Ethics</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Social%20Sciences" id="category2-Social%20Sciences">
-                  <label for="category2-Social%20Sciences" style="margin-bottom: 0px;">Social Sciences</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Engineering" id="category2-Engineering">
-                  <label for="category2-Engineering" style="margin-bottom: 0px;">Engineering</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Physical%20and%20Natural%20Sciences" id="category2-Physical%20and%20Natural%20Sciences">
-                  <label for="category2-Physical%20and%20Natural%20Sciences" style="margin-bottom: 0px;">Physical and Natural Sciences</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Medicine%2FBiomedical%20Sciences" id="category2-Medicine%2FBiomedical%20Sciences">
-                  <label for="category2-Medicine%2FBiomedical%20Sciences" style="margin-bottom: 0px;">Medicine/Biomedical Sciences</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Humanities" id="category2-Humanities">
-                  <label for="category2-Humanities" style="margin-bottom: 0px;">Humanities</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Management%2FBusiness" id="category2-Management%2FBusiness">
-                  <label for="category2-Management%2FBusiness" style="margin-bottom: 0px;">Management/Business</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="Public%20Health%2FBiostatistics" id="category2-Public%20Health%2FBiostatistics">
-                  <label for="category2-Public%20Health%2FBiostatistics" style="margin-bottom: 0px;">Public Health/Biostatistics</label>
-                </div>
-              
-            
+            </div>
           </form>
-
+  
           <br>
-
+  
           <!-- Event Type filter -->
           <form id="categoryFilter3" class="form">
-            <h5>Event Type</h5>
-            
+            <h5 class="collapsible-header">Event Type
+              <span class="arrow">&gt;</span>
+            </h5>
+            <div class="collapsible-content">
               
+                
+                
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category3" value="Course" id="category3-Course">
+                    <label for="category3-Course" style="margin-bottom: 0px;">Course</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category3" value="Fellowship" id="category3-Fellowship">
+                    <label for="category3-Fellowship" style="margin-bottom: 0px;">Fellowship</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category3" value="Seminar" id="category3-Seminar">
+                    <label for="category3-Seminar" style="margin-bottom: 0px;">Seminar</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category3" value="Lecture%20Materials" id="category3-Lecture%20Materials">
+                    <label for="category3-Lecture%20Materials" style="margin-bottom: 0px;">Lecture Materials</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category3" value="Workshop" id="category3-Workshop">
+                    <label for="category3-Workshop" style="margin-bottom: 0px;">Workshop</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category3" value="Symposium" id="category3-Symposium">
+                    <label for="category3-Symposium" style="margin-bottom: 0px;">Symposium</label>
+                  </div>
+                
               
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category3" value="Course" id="category3-Course">
-                  <label for="category3-Course" style="margin-bottom: 0px;">Course</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category3" value="Fellowship" id="category3-Fellowship">
-                  <label for="category3-Fellowship" style="margin-bottom: 0px;">Fellowship</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category3" value="Seminar" id="category3-Seminar">
-                  <label for="category3-Seminar" style="margin-bottom: 0px;">Seminar</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category3" value="Lecture%20Materials" id="category3-Lecture%20Materials">
-                  <label for="category3-Lecture%20Materials" style="margin-bottom: 0px;">Lecture Materials</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category3" value="Workshop" id="category3-Workshop">
-                  <label for="category3-Workshop" style="margin-bottom: 0px;">Workshop</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category3" value="Symposium" id="category3-Symposium">
-                  <label for="category3-Symposium" style="margin-bottom: 0px;">Symposium</label>
-                </div>
-              
-            
+            </div>
           </form>
-
+  
           <br>
-
+  
           <!-- Semester filter -->
           <form id="categoryFilter4" class="form">
-            <h5>Semester Available</h5>
-            
+            <h5 class="collapsible-header">Semester Available
+              <span class="arrow">&gt;</span>
+            </h5>
+            <div class="collapsible-content">
               
+                
+                
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category4" value="Fall" id="category4-Fall">
+                    <label for="category4-Fall" style="margin-bottom: 0px;">Fall</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category4" value="Spring" id="category4-Spring">
+                    <label for="category4-Spring" style="margin-bottom: 0px;">Spring</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category4" value="Summer" id="category4-Summer">
+                    <label for="category4-Summer" style="margin-bottom: 0px;">Summer</label>
+                  </div>
+                
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category4" value="Asynchronous" id="category4-Asynchronous">
+                    <label for="category4-Asynchronous" style="margin-bottom: 0px;">Asynchronous</label>
+                  </div>
+                
               
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category4" value="Fall" id="category4-Fall">
-                  <label for="category4-Fall" style="margin-bottom: 0px;">Fall</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category4" value="Spring" id="category4-Spring">
-                  <label for="category4-Spring" style="margin-bottom: 0px;">Spring</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category4" value="Summer" id="category4-Summer">
-                  <label for="category4-Summer" style="margin-bottom: 0px;">Summer</label>
-                </div>
-              
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category4" value="Asynchronous" id="category4-Asynchronous">
-                  <label for="category4-Asynchronous" style="margin-bottom: 0px;">Asynchronous</label>
-                </div>
-              
-            
+            </div>
           </form>
         </aside>
       </div>
@@ -2967,6 +2988,20 @@ Organized by the Office of the Provost, this event invites faculty, students, an
       });
     }
     
+    function toggleCollapsible(event) {
+      const header = event.target.closest('.collapsible-header');
+      if (!header) return;
+      header.classList.toggle('active');
+      const content = header.nextElementSibling;
+      const arrow = header.querySelector('.arrow');
+      if (content) {
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+      }
+      if (arrow) {
+        arrow.style.transform = content.style.display === 'none' ? 'rotate(0deg)' : 'rotate(90deg)';
+      }
+    }
+    
     document.addEventListener('DOMContentLoaded', function () {
       updateLineCounts();
       window.addEventListener('resize', updateLineCounts);
@@ -3016,30 +3051,31 @@ Organized by the Office of the Provost, this event invites faculty, students, an
         const selectedCategories2 = Array.from(categoryFilter2.querySelectorAll('input[name="category2"]:checked')).map(input => decodeURIComponent(input.value));
         const selectedCategories3 = Array.from(categoryFilter3.querySelectorAll('input[name="category3"]:checked')).map(input => decodeURIComponent(input.value));
         const selectedCategories4 = Array.from(categoryFilter4.querySelectorAll('input[name="category4"]:checked')).map(input => decodeURIComponent(input.value));
-    
+      
         let visibleTileCount = 0;
-    
+      
         sortedTiles.forEach(function(tile) {
           const categories1 = (tile.getAttribute('data-categories1') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories2 = (tile.getAttribute('data-categories2') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories3 = (tile.getAttribute('data-categories3') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories4 = (tile.getAttribute('data-categories4') || '').split(' ').map(cat => decodeURIComponent(cat));
           const isNotApplicable = tile.getAttribute('data-not-applicable') === 'true';
-    
+      
           const matchesCategory1 = selectedCategories1.length === 0 || selectedCategories1.some(cat => categories1.includes(cat));
           const matchesCategory2 = selectedCategories2.length === 0 || selectedCategories2.some(cat => categories2.includes(cat));
           const matchesCategory3 = selectedCategories3.length === 0 || selectedCategories3.some(cat => categories3.includes(cat));
-    
+      
           let matchesCategory4 = true;
           if (selectedCategories4.length > 0 && !isNotApplicable) {
             matchesCategory4 = selectedCategories4.some(cat => categories4.includes(cat));
           }
-    
+      
           if (matchesCategory1 && matchesCategory2 && matchesCategory3 && matchesCategory4) {
             tile.classList.add('filtered');
             if (visibleTileCount < initialLoadCount) {
               tile.classList.remove('hidden');
               tile.style.display = 'block'; // Ensure display is set to block
+              initializeTileGraph(tile); // Initialize the graph when visible
               visibleTileCount++;
             } else {
               tile.classList.add('hidden');
@@ -3051,9 +3087,9 @@ Organized by the Office of the Provost, this event invites faculty, students, an
             tile.style.display = 'none'; // Ensure matched against the filter
           }
         });
-    
+      
         updateLineCounts();
-    
+      
         if (sortedTiles.filter(tile => tile.classList.contains('hidden')).length === 0) {
           showMoreBtn.style.display = 'none';
         } else {
@@ -3107,6 +3143,32 @@ Organized by the Office of the Provost, this event invites faculty, students, an
     
       // Initial sort by default (ranking then title)
       sortByDefault();
+    
+      // Add collapsible functionality to filter headers
+      document.querySelectorAll('.collapsible-header').forEach(header => {
+        header.addEventListener('click', toggleCollapsible);
+        // Initial arrow state
+        const arrow = header.querySelector('.arrow');
+        header.nextElementSibling.style.display = 'none'; // Collapse by default
+        if (arrow) arrow.style.transform = 'rotate(0deg)'; // Arrow pointing down initially
+      });
+    });
+    
+    // Media view with folded sidebar
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebarToggler = document.querySelector('.sidebar-toggler');
+      const sidebarWrapper = document.querySelector('.sidebar-wrapper');
+    
+      console.log('sidebarToggler:', sidebarToggler); // Log for debugging
+      console.log('sidebarWrapper:', sidebarWrapper); // Log for debugging
+    
+      if (sidebarToggler && sidebarWrapper) {
+        sidebarToggler.addEventListener('click', () => {
+          sidebarWrapper.classList.toggle('expanded');
+        });
+      } else {
+        console.error('Sidebar toggler or wrapper not found');
+      }
     });
   </script>
 
