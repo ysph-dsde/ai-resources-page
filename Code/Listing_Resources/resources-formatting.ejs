@@ -13,7 +13,21 @@
   <div>
     <div class="main-container">
       <div class="sidebar-wrapper">
+        <button class="sidebar-toggler">☰</button>
         <aside class="sidebar">
+          <% let hasInfo = false; %>
+          <% if (items && items[0].items && items[0].items.length > 0) { %>
+            <% items[0].items.forEach(function(item) { 
+              if (item.tiles) { 
+                item.tiles.forEach(function(tile) { 
+                  if (tile.info) { 
+                    hasInfo = true;
+                  }
+                });
+              } 
+            }); 
+          } %>
+  
           <div class="sort-wrapper">
             <select id="sortOptions" class="form-control" style="width: 94%;">
               <option value="default" selected>No sorting</option>
@@ -23,101 +37,117 @@
               <option value="date-asc">Date Updated: Oldest to Newest</option>
             </select>
           </div>
-
+  
           <!-- Affiliation filter -->
           <form id="categoryFilter1" class="form">
-            <h5>Institutional Home</h5>
-            <% if (items && items[0].items && items[0].items.length > 0) { %>
-              <% const categories1 = new Set(); %>
-              <% items[0].items.forEach(function(item) {
-                   if (item.categories1) {
-                     item.categories1.forEach(function(cat) {
-                       categories1.add(cat);
-                     });
-                   }
-                 }); %>
-              <% categories1.forEach(function(category) { %>
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category1" value="<%= encodeURIComponent(category) %>"
-                         id="category1-<%= encodeURIComponent(category) %>">
-                  <label for="category1-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
-                </div>
-              <% }); %>
-            <% } %>
+            <h5 class="collapsible-header">Institutional Home
+              <span class="arrow">></span>
+            </h5>
+            <div class="collapsible-content">
+              <% if (items && items[0].items && items[0].items.length > 0) { %>
+                <% const categories1 = new Set(); %>
+                <% items[0].items.forEach(function(item) {
+                     if (item.categories1) {
+                       item.categories1.forEach(function(cat) {
+                         categories1.add(cat);
+                       });
+                     }
+                   }); %>
+                <% categories1.forEach(function(category) { %>
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category1" value="<%= encodeURIComponent(category) %>"
+                          id="category1-<%= encodeURIComponent(category) %>">
+                    <label for="category1-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
+                  </div>
+                <% }); %>
+              <% } %>
+            </div>
           </form>
-
+  
           <br>
-
+  
           <!-- Content Type filter -->
           <form id="categoryFilter2" class="form">
-            <h5>Content Type</h5>
-            <% if (items && items[0].items && items[0].items.length > 0) { %>
-              <% const categories2 = new Set(); %>
-              <% items[0].items.forEach(function(item) {
-                   if (item.categories2) {
-                     item.categories2.forEach(function(cat) {
-                       categories2.add(cat);
-                     });
-                   }
-                 }); %>
-              <% categories2.forEach(function(category) { %>
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category2" value="<%= encodeURIComponent(category) %>"
-                         id="category2-<%= encodeURIComponent(category) %>">
-                  <label for="category2-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
-                </div>
-              <% }); %>
-            <% } %>
+            <h5 class="collapsible-header">Content Type
+              <span class="arrow">></span>
+            </h5>
+            <div class="collapsible-content">
+              <% if (items && items[0].items && items[0].items.length > 0) { %>
+                <% const categories2 = new Set(); %>
+                <% items[0].items.forEach(function(item) {
+                     if (item.categories2) {
+                       item.categories2.forEach(function(cat) {
+                         categories2.add(cat);
+                       });
+                     }
+                   }); %>
+                <% categories2.forEach(function(category) { %>
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category2" value="<%= encodeURIComponent(category) %>"
+                          id="category2-<%= encodeURIComponent(category) %>">
+                    <label for="category2-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
+                  </div>
+                <% }); %>
+              <% } %>
+            </div>
           </form>
-
+  
           <br>
-
+  
           <!-- Event Type filter -->
           <form id="categoryFilter3" class="form">
-            <h5>Event Type</h5>
-            <% if (items && items[0].items && items[0].items.length > 0) { %>
-              <% const categories3 = new Set(); %>
-              <% items[0].items.forEach(function(item) {
-                   if (item.categories3) {
-                     item.categories3.forEach(function(cat) {
-                       categories3.add(cat);
-                     });
-                   }
-                 }); %>
-              <% categories3.forEach(function(category) { %>
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category3" value="<%= encodeURIComponent(category) %>"
-                         id="category3-<%= encodeURIComponent(category) %>">
-                  <label for="category3-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
-                </div>
-              <% }); %>
-            <% } %>
+            <h5 class="collapsible-header">Event Type
+              <span class="arrow">></span>
+            </h5>
+            <div class="collapsible-content">
+              <% if (items && items[0].items && items[0].items.length > 0) { %>
+                <% const categories3 = new Set(); %>
+                <% items[0].items.forEach(function(item) {
+                     if (item.categories3) {
+                       item.categories3.forEach(function(cat) {
+                         categories3.add(cat);
+                       });
+                     }
+                   }); %>
+                <% categories3.forEach(function(category) { %>
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category3" value="<%= encodeURIComponent(category) %>"
+                          id="category3-<%= encodeURIComponent(category) %>">
+                    <label for="category3-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
+                  </div>
+                <% }); %>
+              <% } %>
+            </div>
           </form>
-
+  
           <br>
-
+  
           <!-- Semester filter -->
           <form id="categoryFilter4" class="form">
-            <h5>Semester Available</h5>
-            <% if (items && items[0].items && items[0].items.length > 0) { %>
-              <% const categories4 = new Set(); %>
-              <% items[0].items.forEach(function(item) {
-                   if (item.categories4) {
-                     item.categories4.forEach(function(cat) {
-                       if (cat !== 'N/A') {  // Exclude 'N/A' from appearing in filter
-                         categories4.add(cat);
-                       }
-                     });
-                   }
-                 }); %>
-              <% categories4.forEach(function(category) { %>
-                <div class="checkbox-container">
-                  <input type="checkbox" name="category4" value="<%= encodeURIComponent(category) %>"
-                         id="category4-<%= encodeURIComponent(category) %>">
-                  <label for="category4-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
-                </div>
-              <% }); %>
-            <% } %>
+            <h5 class="collapsible-header">Semester Available
+              <span class="arrow">></span>
+            </h5>
+            <div class="collapsible-content">
+              <% if (items && items[0].items && items[0].items.length > 0) { %>
+                <% const categories4 = new Set(); %>
+                <% items[0].items.forEach(function(item) {
+                     if (item.categories4) {
+                       item.categories4.forEach(function(cat) {
+                         if (cat !== 'N/A') {  // Exclude 'N/A' from appearing in filter
+                           categories4.add(cat);
+                         }
+                       });
+                     }
+                   }); %>
+                <% categories4.forEach(function(category) { %>
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="category4" value="<%= encodeURIComponent(category) %>"
+                          id="category4-<%= encodeURIComponent(category) %>">
+                    <label for="category4-<%= encodeURIComponent(category) %>" style="margin-bottom: 0px;"><%= category %></label>
+                  </div>
+                <% }); %>
+              <% } %>
+            </div>
           </form>
         </aside>
       </div>
@@ -249,6 +279,20 @@
       });
     }
     
+    function toggleCollapsible(event) {
+      const header = event.target.closest('.collapsible-header');
+      if (!header) return;
+      header.classList.toggle('active');
+      const content = header.nextElementSibling;
+      const arrow = header.querySelector('.arrow');
+      if (content) {
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+      }
+      if (arrow) {
+        arrow.style.transform = content.style.display === 'none' ? 'rotate(0deg)' : 'rotate(90deg)';
+      }
+    }
+    
     document.addEventListener('DOMContentLoaded', function () {
       updateLineCounts();
       window.addEventListener('resize', updateLineCounts);
@@ -298,30 +342,31 @@
         const selectedCategories2 = Array.from(categoryFilter2.querySelectorAll('input[name="category2"]:checked')).map(input => decodeURIComponent(input.value));
         const selectedCategories3 = Array.from(categoryFilter3.querySelectorAll('input[name="category3"]:checked')).map(input => decodeURIComponent(input.value));
         const selectedCategories4 = Array.from(categoryFilter4.querySelectorAll('input[name="category4"]:checked')).map(input => decodeURIComponent(input.value));
-    
+      
         let visibleTileCount = 0;
-    
+      
         sortedTiles.forEach(function(tile) {
           const categories1 = (tile.getAttribute('data-categories1') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories2 = (tile.getAttribute('data-categories2') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories3 = (tile.getAttribute('data-categories3') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories4 = (tile.getAttribute('data-categories4') || '').split(' ').map(cat => decodeURIComponent(cat));
           const isNotApplicable = tile.getAttribute('data-not-applicable') === 'true';
-    
+      
           const matchesCategory1 = selectedCategories1.length === 0 || selectedCategories1.some(cat => categories1.includes(cat));
           const matchesCategory2 = selectedCategories2.length === 0 || selectedCategories2.some(cat => categories2.includes(cat));
           const matchesCategory3 = selectedCategories3.length === 0 || selectedCategories3.some(cat => categories3.includes(cat));
-    
+      
           let matchesCategory4 = true;
           if (selectedCategories4.length > 0 && !isNotApplicable) {
             matchesCategory4 = selectedCategories4.some(cat => categories4.includes(cat));
           }
-    
+      
           if (matchesCategory1 && matchesCategory2 && matchesCategory3 && matchesCategory4) {
             tile.classList.add('filtered');
             if (visibleTileCount < initialLoadCount) {
               tile.classList.remove('hidden');
               tile.style.display = 'block'; // Ensure display is set to block
+              initializeTileGraph(tile); // Initialize the graph when visible
               visibleTileCount++;
             } else {
               tile.classList.add('hidden');
@@ -333,9 +378,9 @@
             tile.style.display = 'none'; // Ensure matched against the filter
           }
         });
-    
+      
         updateLineCounts();
-    
+      
         if (sortedTiles.filter(tile => tile.classList.contains('hidden')).length === 0) {
           showMoreBtn.style.display = 'none';
         } else {
@@ -389,6 +434,32 @@
     
       // Initial sort by default (ranking then title)
       sortByDefault();
+    
+      // Add collapsible functionality to filter headers
+      document.querySelectorAll('.collapsible-header').forEach(header => {
+        header.addEventListener('click', toggleCollapsible);
+        // Initial arrow state
+        const arrow = header.querySelector('.arrow');
+        header.nextElementSibling.style.display = 'none'; // Collapse by default
+        if (arrow) arrow.style.transform = 'rotate(0deg)'; // Arrow pointing down initially
+      });
+    });
+    
+    // Media view with folded sidebar
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebarToggler = document.querySelector('.sidebar-toggler');
+      const sidebarWrapper = document.querySelector('.sidebar-wrapper');
+    
+      console.log('sidebarToggler:', sidebarToggler); // Log for debugging
+      console.log('sidebarWrapper:', sidebarWrapper); // Log for debugging
+    
+      if (sidebarToggler && sidebarWrapper) {
+        sidebarToggler.addEventListener('click', () => {
+          sidebarWrapper.classList.toggle('expanded');
+        });
+      } else {
+        console.error('Sidebar toggler or wrapper not found');
+      }
     });
   </script>
 </body>
