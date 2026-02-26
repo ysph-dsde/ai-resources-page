@@ -516,6 +516,55 @@ div.datatables {
   text-align: left;
 }
 
+/* Table section headers */
+
+.table_type_header {
+  position: relative;
+  width: 100%;
+  height: 350px; /* Adjust as needed */
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.network-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay-text {
+  position: absolute;
+  font-family: 'YaleNew';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Adjust text color as needed */
+  font-size: 50px; /* Adjust font size as needed */
+  z-index: 1;
+}
+
+/* Content tiles */
+
+.form-control {
+  font-size: 0.9rem !important;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 10px;
+  color: #5a6570 !important;
+}
+.main-container {
+  display: flex;
+  flex: 1;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: -10px;
+}
+.sort-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
 
 /* Custom table for summarizing contents of datasets by program */
 
@@ -651,6 +700,59 @@ div.datatables {
 }
 .definition-table .right-column p + p {
   margin-top: 10px; /* Adjust the value to increase/decrease space between paragraphs */
+}
+
+/* Custom table for listing curated AI resource */
+
+.curation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+.curation-table, .curation-table th, .curation-table td {
+    border-bottom: 1px solid black;
+}
+.curation-table th, .curation-table td {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.curation-table th {
+    border-top: 1.5px solid black; /* Thicker top border for header cells */
+    border-bottom: 1.5px solid black; /* Thicker bottom border for header cells */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.2rem;
+}
+.curation-table .tool-name {
+    width: 15%;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 2px;
+}
+.curation-table .at-yale {
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+.curation-table .description {
+    text-align: left;
+}
+.curation-table tr:not(:first-child):hover {
+    background: linear-gradient(to right, 
+      rgba(211, 211, 211, 0) 0%, 
+      hsla(195, 75%, 67%, 0.07) 20%, 
+      hsla(195, 75%, 67%, 0.07) 80%, 
+      rgba(211, 211, 211, 0) 100%);
+}
+/* Ensure the header row maintains default background on hover */
+.curation-table tr:first-child:hover {
+    background-color: transparent !important;
+}
+/* Thicker bottom border for the last row */
+.curation-table tr:last-child td {
+    border-bottom: 1.5px solid black;
 }
 
 /*-- header banner --*/
@@ -908,29 +1010,6 @@ ol, ul {
     display: block; /* Show toggler on small screens */
     right: -15px !important; /* Adjusted to move a few points to the left for small screens */
   }
-}
-
-/* Content tiles */
-
-.form-control {
-  font-size: 0.9rem !important;
-  padding: 0.2rem 0.5rem;
-  margin-bottom: 10px;
-  color: #5a6570 !important;
-}
-.main-container {
-  display: flex;
-  flex: 1;
-}
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-  margin-left: -10px;
-}
-.sort-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
 }
 
 // .container {
@@ -1426,7 +1505,7 @@ ol, ul {
     position: relative;
     width: 30%; /* Adjust width as needed */
     min-width: 320px;
-    height: 400px; /* Fixed height for consistency */
+    height: 350px; /* Fixed height for consistency */
     margin-bottom: 20px;
     border: 1px solid #212529; /* Uniform border color */
     overflow: hidden;
