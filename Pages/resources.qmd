@@ -12,7 +12,6 @@ listing:
     filter-ui: false
 ---
 
-
 ```{=html}
 <div class="header">
     </br>

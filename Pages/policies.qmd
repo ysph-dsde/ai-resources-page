@@ -11,7 +11,7 @@ bibliography: references.bib
 csl: ../Code/nature.csl
 ---
 
-:::{.column-page-inset}
+:::{.column-screen}
 
 ```{=html}
 <body>

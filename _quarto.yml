@@ -23,6 +23,14 @@ website:
         href: Pages/resources.qmd
       - text: "AI Tools"
         href: Pages/tools.qmd
+      - text: "Feedback"
+        menu:
+          - text: "For Yale Affiliates"
+            href: https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UQTNGVDlWSFZOVUVNMUsxWktNTUdMS1lVRS4u
+            target: _blank
+          - text: "For Non-Yale Affiliates"
+            href: https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UNlNFQkJCSlE3NkZMT1JIN0tPWEJTVkFWTi4u
+            target: _blank
       - text: "About Us"
         href: Pages/about-us.qmd
       - text: "Contact"
