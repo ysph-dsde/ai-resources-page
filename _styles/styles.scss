@@ -754,6 +754,67 @@ div.datatables {
 .curation-table tr:last-child td {
     border-bottom: 1.5px solid black;
 }
+@media (max-width: 640px) {
+  .curation-table { 
+    border-collapse: separate; 
+    border-spacing: 0 12px; 
+  }
+  .curation-table thead { 
+    display: none; 
+  }
+  
+  .curation-table thead,
+  .curation-table tr:first-child {
+    display: none;
+  }
+
+  .curation-table tr{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .curation-table tr:not(:first-child) { 
+    margin-bottom: 12px; 
+  } /* skips header row */
+  .curation-table tr:last-child { 
+    margin-bottom: 0; 
+  }
+
+  .curation-table td{
+    display: block;                 /* one column */
+    padding: 12px 14px;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+  }
+  .curation-table td:last-child{ 
+    border-bottom: 0; 
+  }
+  .curation-table, .curation-table th, .curation-table td {
+    border-bottom: none !important;
+}
+
+  .curation-table td::before{
+    content: attr(data-label);
+    display: block;                 /* label on its own line */
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .curation-table td,
+  .curation-table td *{
+    overflow-wrap: anywhere;
+  }
+
+  .curation-table .tool-name,
+  .curation-table .at-yale,
+  .curation-table .description{
+    width: auto;
+    text-align: left;
+  }
+}
 
 /*-- header banner --*/
 
@@ -1393,6 +1454,12 @@ ol, ul {
 .icon-red {
   color: var(--link-color);
   font-size: 1.2em;
+}
+.tile_static_page .content .description{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;   /* <- number of lines */
+  overflow: hidden;
 }
 @media (max-width: 1000px) {
   .tile_static h2 {
