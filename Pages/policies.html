@@ -141,15 +141,11 @@ ul.task-list li input[type="checkbox"] {
     <div class="popup-content">
         <span class="close-button">×</span>
         <h2>We'd Love Your Feedback!</h2>
-        <p>Thank you for visiting our website! We value your feedback and use it to continually enhance our services.
-          <br>
-          <br>
-          The Yale affiliates feedback form includes a link to our suggestion box.
-        </p>
+        <p>Thank you for visiting our website! We value your feedback and use it to continually enhance our services.</p>
         
         <div class="form-links">
-            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UQTNGVDlWSFZOVUVNMUsxWktNTUdMS1lVRS4u" target="_blank" class="form-link">Link for Yale Affiliates</a>
-            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UNlNFQkJCSlE3NkZMT1JIN0tPWEJTVkFWTi4u" target="_blank" class="form-link">Link for Non-Yale Affiliates</a>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UQTNGVDlWSFZOVUVNMUsxWktNTUdMS1lVRS4u" target="_blank" class="form-link">Share Feedback</a>
+            <a href="https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_82fW025R84g82MK" target="_blank" class="form-link">Propose an Enhancement</a>
         </div>
         
         <p><small>Forms will open in a new tab</small></p>
@@ -193,17 +189,17 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">AI Tools</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-feedback" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Feedback</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-improve-this-site" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Improve This Site</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-feedback">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-improve-this-site">    
         <li>
     <a class="dropdown-item" href="https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UQTNGVDlWSFZOVUVNMUsxWktNTUdMS1lVRS4u" target="_blank">
- <span class="dropdown-text">For Yale Affiliates</span></a>
+ <span class="dropdown-text">Share Feedback</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UNlNFQkJCSlE3NkZMT1JIN0tPWEJTVkFWTi4u" target="_blank">
- <span class="dropdown-text">For Non-Yale Affiliates</span></a>
+    <a class="dropdown-item" href="https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_82fW025R84g82MK" target="_blank">
+ <span class="dropdown-text">Propose an Enhancement</span></a>
   </li>  
     </ul>
   </li>
@@ -406,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ysph-dsde\.github\.io\/ai-resources-page\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

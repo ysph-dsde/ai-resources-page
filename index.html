@@ -157,17 +157,17 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">AI Tools</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-feedback" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Feedback</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-improve-this-site" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Improve This Site</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-feedback">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-improve-this-site">    
         <li>
     <a class="dropdown-item" href="https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UQTNGVDlWSFZOVUVNMUsxWktNTUdMS1lVRS4u" target="_blank">
- <span class="dropdown-text">For Yale Affiliates</span></a>
+ <span class="dropdown-text">Share Feedback</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXH-TvKDg8gZHqoE3FAMavy5UNlNFQkJCSlE3NkZMT1JIN0tPWEJTVkFWTi4u" target="_blank">
- <span class="dropdown-text">For Non-Yale Affiliates</span></a>
+    <a class="dropdown-item" href="https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_82fW025R84g82MK" target="_blank">
+ <span class="dropdown-text">Propose an Enhancement</span></a>
   </li>  
     </ul>
   </li>
@@ -246,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="container_static">
     <div class="tile_static">
       <div class="image-container" style="position: relative;">
-        <img src="Images/DSDE Identity/Firefly data science ai hub; watercolor image 92513.jpg" class="img">
+        <img src="Images/Network Graph Tile Images for Courses.png" class="img">
         <!-- Checking condition for semester indicators -->
         <div class="semester-indicators">
           <div class="semester-indicator">Fa</div>
@@ -368,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ysph-dsde\.github\.io\/ai-resources-page\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
