@@ -67,7 +67,7 @@ The lower section of each tile includes hyperlinked icons and a brief keyword de
   <div class="container_static">
     <div class="tile_static">
       <div class="image-container" style="position: relative;">
-        <img src="Images/DSDE Identity/Firefly data science ai hub; watercolor image 92513.jpg" class="img">
+        <img src="Images/Network Graph Tile Images for Courses.png" class="img">
         <!-- Checking condition for semester indicators -->
         <div class="semester-indicators">
           <div class="semester-indicator">Fa</div>

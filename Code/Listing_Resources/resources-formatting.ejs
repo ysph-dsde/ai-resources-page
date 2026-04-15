@@ -2,18 +2,44 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Resources with Features:
-    - Four categories filter with sorting by title and date updated - May 10th, 2025
-    - Show more with starting at 5 rows of tiles and back-to-top - June 11th, 2025
-    - Default sorting by ranking (ascending) then title (A-Z) called "No sorting" - Sept. 11th, 2025
-  </title>
+
+  <!--
+    Resources Page Layout + Behavior (Sidebar Filters + Sort + Tile Grid)
+    --------------------------------------------------------------------
+    This page renders a two-column resources UI:
+
+    LEFT (Sidebar)
+    - Sort dropdown (#sortOptions) to reorder tiles.
+    - Four collapsible checkbox filters (#categoryFilter1–#categoryFilter4).
+    - Mobile sidebar toggle (☰) to expand/collapse the filter panel.
+
+    RIGHT (Main Content)
+    - A tile grid (#tilesContainer) generated from `items[0].items[*].tiles[*]`.
+    - Each tile carries data-* attributes (categories, title, date updated, ranking, semester N/A flag)
+      used by the client-side script for filtering/sorting.
+    - Tiles include an image area with a canvas visualization (initialized when tiles become visible),
+      plus optional semester indicators and resource links.
+    - “Show More” reveals additional matching tiles in batches while preserving current filters/sort.
+    - Text clamping is dynamically applied to tile descriptions to keep cards visually consistent.
+
+    Feature history (dates added)
+    - May 10, 2025: Four-category filtering + sorting by Title and Date Updated.
+    - June 11, 2025: “Show More” pagination (initial rows) + Back-to-top control.
+    - Sept. 11, 2025: Default “No sorting” option = Ranking (asc) then Title (A–Z).
+  -->
+
+  <title>Resources</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
   <div>
     <div class="main-container">
+      <!-- Sidebar wrapper: holds toggle button + the filter/sort sidebar -->
       <div class="sidebar-wrapper">
+        <!-- Mobile/compact view toggler (JS toggles .expanded on .sidebar-wrapper) -->
         <button class="sidebar-toggler">☰</button>
+  
         <aside class="sidebar">
           <% let hasInfo = false; %>
           <% if (items && items[0].items && items[0].items.length > 0) { %>
@@ -28,6 +54,7 @@
             }); 
           } %>
   
+          <!-- Sort dropdown (JS reads #sortOptions.value to sort tiles) -->
           <div class="sort-wrapper">
             <select id="sortOptions" class="form-control" style="width: 94%;">
               <option value="default" selected>No sorting</option>
@@ -38,7 +65,7 @@
             </select>
           </div>
   
-          <!-- Affiliation filter -->
+          <!-- Filter group #1: Institutional Home -->
           <form id="categoryFilter1" class="form">
             <h5 class="collapsible-header">Institutional Home
               <span class="arrow">></span>
@@ -66,7 +93,7 @@
   
           <br>
   
-          <!-- Content Type filter -->
+          <!-- Filter group #2: Content Type -->
           <form id="categoryFilter2" class="form">
             <h5 class="collapsible-header">Content Type
               <span class="arrow">></span>
@@ -94,7 +121,7 @@
   
           <br>
   
-          <!-- Event Type filter -->
+          <!-- Filter group #3: Event Type -->
           <form id="categoryFilter3" class="form">
             <h5 class="collapsible-header">Event Type
               <span class="arrow">></span>
@@ -122,7 +149,7 @@
   
           <br>
   
-          <!-- Semester filter -->
+          <!-- Filter group #4: Semester Available (excludes "N/A" from checkbox list) -->
           <form id="categoryFilter4" class="form">
             <h5 class="collapsible-header">Semester Available
               <span class="arrow">></span>
@@ -151,8 +178,10 @@
           </form>
         </aside>
       </div>
-
+  
+      <!-- Main content: tile grid + Show More + back-to-top -->
       <div class="main-content">
+        <!-- Tile grid (JS reads .tile data-* attributes for filtering/sorting) -->
         <div class="container" id="tilesContainer">
           <% let visibleTileCount = 0; %>
           <% items[0].items.forEach(function(item) { %>
@@ -168,29 +197,25 @@
                      data-date="<%= tile['date-updated'] %>"
                      data-color="<%= tile.color %>"
                      data-not-applicable="<%= item.categories4.includes('N/A') %>">
+  
+                  <!-- Visual header area: canvas graph + optional semester badges -->
                   <div class="image-container" style="position: relative;">
-                    <canvas class="network-canvas"></canvas> <!-- Only the canvas remains -->
+                    <canvas class="network-canvas"></canvas> <!-- JS draws into this canvas -->
                     <% if (!item.categories4.includes('N/A')) { %>
                       <div class="semester-indicators">
-                        <% if (item.categories4.includes('Fall')) { %>
-                          <div class="semester-indicator">Fa</div>
-                        <% } %>
-                        <% if (item.categories4.includes('Spring')) { %>
-                          <div class="semester-indicator">Sp</div>
-                        <% } %>
-                        <% if (item.categories4.includes('Summer')) { %>
-                          <div class="semester-indicator">Su</div>
-                        <% } %>
-                        <% if (item.categories4.includes('Asynchronous')) { %>
-                          <div class="semester-indicator">As</div>
-                        <% } %>
-                        <% if (item.categories4.includes('Varies')) { %>
-                          <div class="semester-indicator">Va</div>
-                        <% } %>
+                        <% if (item.categories4.includes('Fall')) { %><div class="semester-indicator">Fa</div><% } %>
+                        <% if (item.categories4.includes('Spring')) { %><div class="semester-indicator">Sp</div><% } %>
+                        <% if (item.categories4.includes('Summer')) { %><div class="semester-indicator">Su</div><% } %>
+                        <% if (item.categories4.includes('Asynchronous')) { %><div class="semester-indicator">As</div><% } %>
+                        <% if (item.categories4.includes('Varies')) { %><div class="semester-indicator">Va</div><% } %>
                       </div>
                     <% } %>
                   </div>
+  
+                  <!-- Title (JS uses .js-line-count to calculate clamping) -->
                   <h2 class="js-line-count"><%= tile.title %></h2>
+  
+                  <!-- Optional instructors list (linked) -->
                   <% if (tile.instructors && tile.instructors.length > 0) { %>
                     <p class="instructors">
                       <%= tile.instructors.map(function(instructor, index) {
@@ -199,7 +224,11 @@
                          }).join('') %>
                     </p>
                   <% } %>
+  
+                  <!-- Description (JS applies -webkit-line-clamp to this element) -->
                   <p class="description"><%= tile.description %></p>
+  
+                  <!-- Footer: optional outbound links/icons + optional topic line -->
                   <div class="card-header py-1 px-2 border-bottom bg-light">
                     <small class="card-text">
                       <% if (tile.site) { %>
@@ -220,6 +249,7 @@
                       <% if (tile.info) { %>
                         &nbsp;<a href="<%= tile.info %>" title="Get more information" class="source-code"><i class="bi-info-circle"></i></a>
                       <% } %>
+  
                       <% if (tile.topic) { %>
                         <p class="topic" style="margin-bottom: 5px;"><%= tile.topic %></p>
                       <% } else { %>
@@ -228,6 +258,7 @@
                     </small>
                   </div>
                 </div>
+  
                 <% visibleTileCount++; %>
               <% }); %>
             <% } else { %>
@@ -235,50 +266,78 @@
             <% } %>
           <% }); %>
         </div>
+  
+        <!-- Pagination control (JS reveals additional tiles when clicked) -->
         <button id="showMoreBtn" class="btn btn-primary" style="display: block; margin: 20px auto;">Show More</button>
-        <a id="quarto-back-to-top" title="Back to top" role="button" style="display: none;"><i class="bi bi-arrow-up"></i>Back to top</a>
+  
+        <!-- Back-to-top control (shown/hidden elsewhere) -->
+        <a id="quarto-back-to-top" title="Back to top" role="button" style="display: none;">
+          <i class="bi bi-arrow-up"></i>Back to top
+        </a>
       </div>
-      
     </div>
   </div>
 
   <script>
+    /**
+     * Resource Tiles UI Controller
+     * ---------------------------
+     * This script powers a “resources” grid of tiles with:
+     * - Dynamic text clamping for each tile description (adjusts -webkit-line-clamp based on how many lines
+     *   the title/instructors/topic take up, so cards stay visually consistent).
+     * - Four collapsible checkbox filters (category1–category4) that show only matching tiles.
+     *   * Special case: tiles marked “N/A” for semester are not forced to match a semester selection.
+     * - Sorting via a dropdown (Title A–Z/Z–A, Date Updated asc/desc, or “No sorting” which sorts by ranking
+     *   ascending then title A–Z).
+     * - Incremental “Show More” pagination: initially shows `initialLoadCount` tiles, then reveals tiles in
+     *   batches (`batchSize`) while preserving filters/sort; re-applies clamping after each reveal.
+     * - Sidebar toggle behavior for smaller screens (folded/expanded sidebar wrapper).
+     *
+     * Assumptions:
+     * - Each tile is a `.tile` element with data attributes (data-title, data-date, data-ranking, and category
+     *   attributes), and CSS uses `.hidden` plus `display:none/block` for visibility.
+     * - `initializeTileGraph(tile)` exists elsewhere and renders the canvas visualization for visible tiles.
+     */
+  
     function parseDate(dateStr) {
       return new Date(dateStr);
     }
-    
+  
+    // Dynamically set the description clamp based on how much vertical space
+    // is taken by title/instructors/topic within each tile.
     function updateLineCounts() {
       document.querySelectorAll(".tile").forEach(function (tile) {
         const h2Element = tile.querySelector(".js-line-count");
         const lineHeight = parseFloat(getComputedStyle(h2Element).lineHeight);
-    
+  
         const linesInH2 = Math.ceil(h2Element.scrollHeight / lineHeight);
-    
+  
         const instructorElement = tile.querySelector('.instructors');
         const linesInInstructors = instructorElement ? Math.ceil(instructorElement.scrollHeight / lineHeight) : 0;
-    
+  
         const pElement = tile.querySelector("p.description");
         pElement.style.display = '-webkit-box';
         pElement.style.webkitBoxOrient = 'vertical';
         pElement.style.overflow = 'hidden';
-    
+  
         let clampValue = 10;
-    
+  
         clampValue -= Math.max(0, linesInH2 - 1);
         clampValue -= Math.max(0, linesInInstructors - 1);
-    
+  
         const topicElement = tile.querySelector('.topic');
         if (topicElement && topicElement.style.display !== 'none') {
           const linesInTopic = Math.ceil(topicElement.scrollHeight / lineHeight);
           clampValue -= Math.max(0, linesInTopic - 1);
         }
-    
-        if (clampValue < 1) clampValue = 1; // Ensure at least one line is available for the description
-    
+  
+        if (clampValue < 1) clampValue = 1;
+  
         pElement.style.webkitLineClamp = clampValue;
       });
     }
-    
+  
+    // Toggle open/closed state of filter sections and rotate the arrow indicator.
     function toggleCollapsible(event) {
       const header = event.target.closest('.collapsible-header');
       if (!header) return;
@@ -292,11 +351,12 @@
         arrow.style.transform = content.style.display === 'none' ? 'rotate(0deg)' : 'rotate(90deg)';
       }
     }
-    
+  
     document.addEventListener('DOMContentLoaded', function () {
+      // Apply initial clamping and keep it correct on viewport resize.
       updateLineCounts();
       window.addEventListener('resize', updateLineCounts);
-    
+  
       const categoryFilter1 = document.getElementById('categoryFilter1');
       const categoryFilter2 = document.getElementById('categoryFilter2');
       const categoryFilter3 = document.getElementById('categoryFilter3');
@@ -304,12 +364,12 @@
       const sortOptions = document.getElementById('sortOptions');
       const tilesContainer = document.getElementById('tilesContainer');
       const showMoreBtn = document.getElementById('showMoreBtn');
-      const initialLoadCount = 9; // 3 rows of 3 tiles each
-    
+      const initialLoadCount = 9; // number of tiles to show immediately after filtering
+  
       let tiles = Array.from(tilesContainer.querySelectorAll('.tile'));
-      let sortedTiles = [...tiles];  // Preserve original order for sorted tiles
-    
-      // Function to sort by default criteria: ranking then title
+      let sortedTiles = [...tiles]; // working list whose order changes when sorting
+  
+      // Default sort ("No sorting"): ranking ascending, then title A–Z.
       function sortByDefault() {
         sortedTiles.forEach(tile => {
           const rankAttr = tile.getAttribute('data-ranking');
@@ -317,80 +377,87 @@
             tile.dataset.numericRanking = parseInt(rankAttr, 10);
           }
         });
-    
+  
         sortedTiles.sort((a, b) => {
           const titleA = a.getAttribute('data-title').toLowerCase();
           const titleB = b.getAttribute('data-title').toLowerCase();
           const rankingA = a.dataset.numericRanking || 0;
           const rankingB = b.dataset.numericRanking || 0;
-    
+  
           if (rankingA !== rankingB) {
             return rankingA - rankingB;
           }
           return titleA.localeCompare(titleB);
         });
-    
+  
+        // Re-append tiles to the container in the new order.
         sortedTiles.forEach(tile => {
           tilesContainer.appendChild(tile);
         });
-    
-        filterTiles(); // Apply the current filter on new sorted order
+  
+        // Re-apply current filters after sorting.
+        filterTiles();
       }
-    
+  
+      // Apply all four category filters; show the first `initialLoadCount` matching tiles and hide the rest.
       function filterTiles() {
         const selectedCategories1 = Array.from(categoryFilter1.querySelectorAll('input[name="category1"]:checked')).map(input => decodeURIComponent(input.value));
         const selectedCategories2 = Array.from(categoryFilter2.querySelectorAll('input[name="category2"]:checked')).map(input => decodeURIComponent(input.value));
         const selectedCategories3 = Array.from(categoryFilter3.querySelectorAll('input[name="category3"]:checked')).map(input => decodeURIComponent(input.value));
         const selectedCategories4 = Array.from(categoryFilter4.querySelectorAll('input[name="category4"]:checked')).map(input => decodeURIComponent(input.value));
-      
+  
         let visibleTileCount = 0;
-      
+  
         sortedTiles.forEach(function(tile) {
           const categories1 = (tile.getAttribute('data-categories1') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories2 = (tile.getAttribute('data-categories2') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories3 = (tile.getAttribute('data-categories3') || '').split(' ').map(cat => decodeURIComponent(cat));
           const categories4 = (tile.getAttribute('data-categories4') || '').split(' ').map(cat => decodeURIComponent(cat));
           const isNotApplicable = tile.getAttribute('data-not-applicable') === 'true';
-      
+  
           const matchesCategory1 = selectedCategories1.length === 0 || selectedCategories1.some(cat => categories1.includes(cat));
           const matchesCategory2 = selectedCategories2.length === 0 || selectedCategories2.some(cat => categories2.includes(cat));
           const matchesCategory3 = selectedCategories3.length === 0 || selectedCategories3.some(cat => categories3.includes(cat));
-      
+  
+          // Semester filter: only enforce when the tile is NOT "N/A".
           let matchesCategory4 = true;
           if (selectedCategories4.length > 0 && !isNotApplicable) {
             matchesCategory4 = selectedCategories4.some(cat => categories4.includes(cat));
           }
-      
+  
           if (matchesCategory1 && matchesCategory2 && matchesCategory3 && matchesCategory4) {
             tile.classList.add('filtered');
+  
             if (visibleTileCount < initialLoadCount) {
               tile.classList.remove('hidden');
-              tile.style.display = 'block'; // Ensure display is set to block
-              initializeTileGraph(tile); // Initialize the graph when visible
+              tile.style.display = 'block';
+              initializeTileGraph(tile);
               visibleTileCount++;
             } else {
               tile.classList.add('hidden');
-              tile.style.display = 'none'; // Hide others
+              tile.style.display = 'none';
             }
           } else {
             tile.classList.remove('filtered');
             tile.classList.add('hidden');
-            tile.style.display = 'none'; // Ensure matched against the filter
+            tile.style.display = 'none';
           }
         });
-      
+  
+        // Re-apply description clamping after visibility changes.
         updateLineCounts();
-      
-        if (sortedTiles.filter(tile => tile.classList.contains('hidden')).length === 0) {
-          showMoreBtn.style.display = 'none';
-        } else {
-          showMoreBtn.style.display = 'block';
-        }
+  
+        // Show the Show More button only if there are still hidden tiles that match filters.
+        const stillHidden = sortedTiles.some(tile =>
+          tile.classList.contains('filtered') && tile.classList.contains('hidden')
+        );
+        showMoreBtn.style.display = stillHidden ? 'block' : 'none';
       }
-    
+  
+      // Sort tiles based on the dropdown selection, then re-filter (which also paginates).
       function sortTiles() {
         const sortValue = sortOptions.value;
-    
+  
         sortedTiles.sort((a, b) => {
           const titleA = a.getAttribute('data-title').toLowerCase();
           const titleB = b.getAttribute('data-title').toLowerCase();
@@ -398,7 +465,7 @@
           const dateB = parseDate(b.getAttribute('data-date'));
           const rankingA = a.dataset.numericRanking || 0;
           const rankingB = b.dataset.numericRanking || 0;
-    
+  
           if (sortValue === 'title-asc') {
             return titleA.localeCompare(titleB);
           } else if (sortValue === 'title-desc') {
@@ -413,46 +480,68 @@
             }
             return titleA.localeCompare(titleB);
           }
-    
+  
           return 0;
         });
-    
+  
         sortedTiles.forEach(tile => {
           tilesContainer.appendChild(tile);
         });
-    
-        filterTiles(); // Apply the current filter on new sorted order
+  
+        filterTiles();
       }
-    
+  
+      // Wire up filter and sort events.
       categoryFilter1.addEventListener('change', filterTiles);
       categoryFilter2.addEventListener('change', filterTiles);
       categoryFilter3.addEventListener('change', filterTiles);
       categoryFilter4.addEventListener('change', filterTiles);
       sortOptions.addEventListener('change', sortTiles);
-    
-      filterTiles(); // Apply filters initially after the DOM is ready
-    
-      // Initial sort by default (ranking then title)
+  
+      // Initial render: filter, then default-sort (which re-filters).
+      filterTiles();
       sortByDefault();
-    
-      // Add collapsible functionality to filter headers
+  
+      // Show More: reveal additional matching tiles in a batch, then re-apply clamping.
+      showMoreBtn.addEventListener('click', function () {
+        const hiddenFiltered = sortedTiles.filter(tile =>
+          tile.classList.contains('filtered') && tile.classList.contains('hidden')
+        );
+  
+        const batchSize = 6; // number of additional tiles to reveal per click
+  
+        hiddenFiltered.slice(0, batchSize).forEach(tile => {
+          tile.classList.remove('hidden');
+          tile.style.display = 'block';
+          initializeTileGraph(tile);
+        });
+  
+        // Re-apply clamp after newly shown tiles are laid out.
+        requestAnimationFrame(updateLineCounts);
+  
+        const stillHidden = sortedTiles.some(tile =>
+          tile.classList.contains('filtered') && tile.classList.contains('hidden')
+        );
+        showMoreBtn.style.display = stillHidden ? 'block' : 'none';
+      });
+  
+      // Collapsible filter section setup (collapsed by default).
       document.querySelectorAll('.collapsible-header').forEach(header => {
         header.addEventListener('click', toggleCollapsible);
-        // Initial arrow state
         const arrow = header.querySelector('.arrow');
-        header.nextElementSibling.style.display = 'none'; // Collapse by default
-        if (arrow) arrow.style.transform = 'rotate(0deg)'; // Arrow pointing down initially
+        header.nextElementSibling.style.display = 'none';
+        if (arrow) arrow.style.transform = 'rotate(0deg)';
       });
     });
-    
-    // Media view with folded sidebar
+  
+    // Sidebar toggle for responsive layouts (fold/unfold filters panel).
     document.addEventListener('DOMContentLoaded', () => {
       const sidebarToggler = document.querySelector('.sidebar-toggler');
       const sidebarWrapper = document.querySelector('.sidebar-wrapper');
-    
-      console.log('sidebarToggler:', sidebarToggler); // Log for debugging
-      console.log('sidebarWrapper:', sidebarWrapper); // Log for debugging
-    
+  
+      console.log('sidebarToggler:', sidebarToggler);
+      console.log('sidebarWrapper:', sidebarWrapper);
+  
       if (sidebarToggler && sidebarWrapper) {
         sidebarToggler.addEventListener('click', () => {
           sidebarWrapper.classList.toggle('expanded');
