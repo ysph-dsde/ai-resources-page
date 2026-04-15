@@ -359,11 +359,44 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
 </div>
 <div id="listing-contributors" class="column-screen-inset quarto-listing quarto-listing-container-custom">
 
+<!--
+  Template: About Us People Listing EJS
+
+  Purpose:
+  - Render a responsive “people” tile grid (image + name + titles + links + bio + contact + optional profile CTA).
+
+  Notes / dependencies:
+  - Bootstrap CSS is included below.
+  - Icons used:
+    - Bootstrap Icons classes: `bi-globe`, `bi-people-fill`, `bi-linkedin`
+      Include Bootstrap Icons in <head> if not already present:
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    - Academicons (already included below): `ai-google-scholar-square`, `ai-orcid`
+
+  Data expected (high level):
+  - items[0].items.tiles = [{
+      name, image, titles, bio,
+      "ysph-site"?, group?, linkedin?, google_scholar?, orcid?,
+      email?, phone?, profile_link?
+    }]
+
+  Rendering behavior:
+  - Only renders tiles when `items[0].items.tiles` exists; otherwise prints “No tiles available.”
+  - Link bar shows only the icons for links present on each tile.
+  - Contact info shows email/phone only when present.
+  - “View Full Profile” link is shown only when `profile_link` exists.
+-->
+
 
   <meta charset="UTF-8">
   <title>Resources with Features</title>
+
+  <!-- Bootstrap (layout + base styling) -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Academicons (Google Scholar / ORCID icons) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 
 
   <div class="tile-container">
@@ -373,10 +406,13 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
           <div class="img-container">
             <img src="../Images/People/bhramar-mukherjee.jpeg" alt="Image for Bhramar Mukherjee, PhD">
           </div>
+
           <div class="tile-content">
             <h2 class="anchored">Bhramar Mukherjee, PhD</h2>
             <p class="title-paragraph">Senior Associate Dean of Public Health Data Science and Data Equity; Anna M.R. Lauder Professor of Biostatistics; Professor of Epidemiology (Chronic Diseases) and of Statistics and Data Science; Affiliated Faculty, Yale Institute for Global Health
 </p>
+
+            <!-- Icon links (only render icons when the corresponding URL exists) -->
             <div class="link-bar">
               <small class="link-bar-text">
                 
@@ -392,8 +428,11 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
                 
               </small>
             </div>
+
             <p class="description">Professor Bhramar Mukherjee is the Anna M.R. Lauder Professor of Biostatistics and Professor of Chronic Disease Epidemiology at the Yale School of Public Health (YSPH). Professor Mukherjee serves as the inaugural Senior Associate Dean of Public Health Data Science and Data Equity at YSPH. She holds a secondary appointment in the Department of Statistics and Data Science and is affiliated with the MacMillan Center and the Institute for the Foundations of Data Science. She serves on the Yale Cancer Center Director’s cabinet.
 </p>
+
+            <!-- Contact info (optional) -->
             <div class="contact-info">
               
                 Email: <a href="mailto:bhramar.mukherjee@yale.edu">bhramar.mukherjee@yale.edu</a><br>
@@ -402,6 +441,8 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
                 Phone: <a href="tel:203-737-8644">203-737-8644</a>
               
             </div>
+
+            <!-- Optional CTA -->
             
           </div>
         </div>
@@ -410,10 +451,13 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
           <div class="img-container">
             <img src="../Images/People/zuoheng-anita-wang.jpeg" alt="Image for Zuoheng Anita Wang, PhD">
           </div>
+
           <div class="tile-content">
             <h2 class="anchored">Zuoheng Anita Wang, PhD</h2>
             <p class="title-paragraph">Professor of Biostatistics
 </p>
+
+            <!-- Icon links (only render icons when the corresponding URL exists) -->
             <div class="link-bar">
               <small class="link-bar-text">
                 
@@ -429,8 +473,11 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
                 
               </small>
             </div>
+
             <p class="description">Dr. Wang is a Professor of Biostatistics, Computational Biology and Bioinformatics, and Biomedical Informatics &amp; Data Science at Yale University. Her research focuses on statistical modeling of omics and healthcare data. Dr. Wang’s statistical expertise spans kernel machine methods, mixed effects models, correlated and longitudinal data analysis, machine learning, and network analysis. She develops innovative statistical methods and computational tools for large-scale biomedical studies and electronic health records data, including disease risk prediction, genetic susceptibility variant identification, and single-cell and spatial transcriptomic data analysis, with application in mental health, addiction, cancer, autism, lung and cardiovascular diseases, contributing to the understanding of disease pathogenesis.
 </p>
+
+            <!-- Contact info (optional) -->
             <div class="contact-info">
               
                 Email: <a href="mailto:zuoheng.wang@yale.edu">zuoheng.wang@yale.edu</a><br>
@@ -439,6 +486,8 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
                 Phone: <a href="tel:203-737-2672">203-737-2672</a>
               
             </div>
+
+            <!-- Optional CTA -->
             
           </div>
         </div>
@@ -447,10 +496,13 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
           <div class="img-container">
             <img src="../Images/People/shelby-golden.jpeg" alt="Image for Shelby Golden, M.S.">
           </div>
+
           <div class="tile-content">
             <h2 class="anchored">Shelby Golden, M.S.</h2>
             <p class="title-paragraph">Data Scientist I
 </p>
+
+            <!-- Icon links (only render icons when the corresponding URL exists) -->
             <div class="link-bar">
               <small class="link-bar-text">
                 
@@ -466,8 +518,11 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
                 
               </small>
             </div>
+
             <p class="description">Shelby Golden is a data scientist with a background in computational mathematics, molecular biology, and biochemistry. She holds a Master of Science in Applied Computational Mathematics from Johns Hopkins University and dual Bachelor of Science degrees in Molecular, Cellular, Developmental Biology and Biochemistry with a minor in Engineering in Applied Mathematics.
 </p>
+
+            <!-- Contact info (optional) -->
             <div class="contact-info">
               
                 Email: <a href="mailto:shelby.golden@yale.edu">shelby.golden@yale.edu</a><br>
@@ -476,6 +531,8 @@ Each resource is designed to empower YSPH students, staff, and faculty to excel 
                 Phone: <a href="tel:203-737-8644">203-737-8644</a>
               
             </div>
+
+            <!-- Optional CTA -->
             
           </div>
         </div>
