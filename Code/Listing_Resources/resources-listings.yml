@@ -1,50 +1,81 @@
-# -----------
-# yaml listing for the References page in the Yale School of 
-# Public Health (YSPH) AI Resource Navigation Tool github.io page.
-# 
-# Filter by two categories: 
-#   1. Institutional Home 
-#   2. Content Type
-#   3. Event Type
-#   4. Semester
+# =============================================================================
+# Yale School of Public Health (YSPH)
+# AI Educational Resources — References Page (github.io)
+# YAML listing documentation
+# =============================================================================
 #
+# Overview
+# --------
+# This file defines the YAML listing that populates the References page. Content
+# is rendered by an EJS template into a filterable/sortable grid of “tiles”.
+#
+# Author / Maintenance
+# --------------------
 # Author: Shelby Golden, M.S.
-#   Date: December 5th, 2025
-# 
-# Date last updated: Dec. 16th, 2025
-#   Last updated by: Shelby Golden
-# 
-# 
-# Filter/search behavior with the ejs file:
-#   - Filter by two categories: 1. institution, 2. content type, 3. event type,
-#     and 4. semester
-#   - Sort tiles by "title" and "date-updated". The user can
-#     control how these two characteristics are sorted.
-#   - Default sorting of the tiles is by "ranking" (ascending) then "title"
-#     (A-Z)
-# 
-# 
-# When adding new tiles:
-#   - Under "items" each entry requires association with both categories
-#     and metadata that gets added under "tiles" |-> "- title: ** ".
-#   - Group tiles with the SAME four categories together under the same "tiles".
-#     This causes all tiles listed under that subsection to get filtered together
-#     when the user selectes any or both categories.
-#   - Mandatory "tiles" |-> "- title: ** " fields: "title", "description", 
-#     "date-added", "date-updated", "ranking," "image", "topic" to list the 
-#     second category.
-
-
-#   - Opional "tiles" |-> "- title: ** " fields: "site" for the main webpage for 
-#     the source, "group" for the lab or group webpage who provides the source,
-#     "github" for the codebase repository, "article" if there primary articles
-#     presenting the resource by the creators, and "info" that links to an
-#     internal page with additional details about the resource.
-# 
-# When editing existing tiles:
-#   - Ensure that the new links work as expected.
-#   - Change the "date-updated" entry for the tile you edited.
-#   - Change the "last updated" sections at the top of the page.
+# Created: December 5, 2025
+#
+# Last updated: December 16, 2025
+# Last updated by: Shelby Golden
+#
+# Taxonomy (Filters)
+# ------------------
+# The UI supports four filter groups:
+#   1) Institutional Home
+#   2) Content Type
+#   3) Event Type
+#   4) Semester (Fall, Spring, Summer, Varies, Asynchronous, N/A)
+#
+# UI behavior (EJS template integration)
+# -------------------------------------
+# Filtering:
+#   - Filters apply across all four groups.
+#   - Within a group: matching is “OR” across selected checkboxes.
+#   - Across groups: matching is “AND” (tile must satisfy each active group).
+#
+# Sorting:
+#   - User-selectable sorting by:
+#       * title
+#       * date-updated
+#   - Default sorting (“No sorting” option):
+#       * ranking (ascending), then title (A–Z)
+#
+# Adding new tiles
+# ---------------
+# Structure:
+#   - Under `items`, each entry groups tiles that share the same four categories.
+#   - Grouping rule:
+#       * Put tiles with the SAME (Institutional Home, Content Type, Event Type,
+#         Semester) together under the same `tiles:` list.
+#       * Result: those tiles will filter together when users select any
+#         combination of the four category groups.
+#
+# Required tile fields (under `tiles: - title: ...`)
+# --------------------------------------------------
+# Each tile must include:
+#   - title
+#   - description
+#   - date-added
+#   - date-updated
+#   - ranking
+#   - color (based on the scheme defined in the project Excel file)
+#   - topic (used to display the content type on the tile)
+#
+# Optional tile fields
+# --------------------
+# Add these only when applicable:
+#   - site: main webpage for the resource
+#   - group: lab/group webpage providing the resource
+#   - course: courses.yale.edu page
+#   - github: code repository URL
+#   - article: primary publication(s) describing the resource
+#   - info: internal page with additional details about the resource
+#
+# Editing existing tiles
+# ----------------------
+#   - Verify any new/changed links work as expected.
+#   - Update the tile’s `date-updated`.
+#   - Update the “Last updated” metadata in the header comments above.
+# =============================================================================
 
   
 items:
