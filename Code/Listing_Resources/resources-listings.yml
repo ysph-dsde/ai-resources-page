@@ -1,21 +1,22 @@
 # =============================================================================
 # Yale School of Public Health (YSPH)
-# AI Educational Resources — References Page (github.io)
+# AI Educational Resources — Courses & Programs Page (github.io)
 # YAML listing documentation
 # =============================================================================
 #
 # Overview
 # --------
-# This file defines the YAML listing that populates the References page. Content
-# is rendered by an EJS template into a filterable/sortable grid of “tiles”.
+# This file defines the YAML listing that populates the Courses & Programs page. 
+# Content is rendered by an EJS template into a filterable/sortable grid of 
+# “tiles”.
 #
 # Author / Maintenance
 # --------------------
-# Author: Shelby Golden, M.S.
+#  Author: Shelby Golden, M.S.
 # Created: December 5, 2025
 #
-# Last updated: December 16, 2025
-# Last updated by: Shelby Golden
+# Date last updated: December 16, 2025
+#   Last updated by: Shelby Golden
 #
 # Taxonomy (Filters)
 # ------------------
