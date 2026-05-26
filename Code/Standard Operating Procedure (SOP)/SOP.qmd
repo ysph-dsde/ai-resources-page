@@ -23,9 +23,9 @@ The purpose of this document is to outline the contents and ongoing maintenance 
 
 - Shelby Golden, M.S.
 
-**Date Effective:** May 22<sup>th</sup>, 2026
+**Date Effective:** May 22<sup>nd</sup>, 2026
 
-**Date Updated:** May 22<sup>th</sup>, 2026
+**Date Updated:** May 26<sup>th</sup>, 2026
 
 
 \tableofcontents
@@ -96,7 +96,7 @@ If this is the first time the repository is being initialized, you may need to i
   
   \begin{codebox}
   \begin{Verbatim}[breaklines = true, breaksymbol = \textcolor{idlelinnum}{\scriptsize$\hookrightarrow$}, commandchars = \\\{\}]
-\func{cd} \str{"FILE-PATH/resource-page/"}
+\func{cd} \str{"FILE-PATH/ai-resources-page/"}
   \end{Verbatim}
   \end{codebox}
 
@@ -205,7 +205,7 @@ On the site, these are linked in three locations: a pop-up referenced in the `*.
   
   \begin{codebox}
   \begin{Verbatim}[breaklines = true, breaksymbol = \textcolor{idlelinnum}{\scriptsize$\hookrightarrow$}, commandchars = \\\{\}]
-\func{cd} \str{"FILE-PATH/resource-page/"}
+\func{cd} \str{"FILE-PATH/ai-resources-page/"}
   \end{Verbatim}
   \end{codebox}
 
@@ -249,7 +249,7 @@ The pop-up is coordinated using "Code/popup.js" and "_includes/feedback_popup.ht
   
   \begin{codebox}
   \begin{Verbatim}[breaklines = true, breaksymbol = \textcolor{idlelinnum}{\scriptsize$\hookrightarrow$}, commandchars = \\\{\}]
-\func{cd} \str{"FILE-PATH/resource-page/"}
+\func{cd} \str{"FILE-PATH/ai-resources-page/"}
   \end{Verbatim}
   \end{codebox}
 
@@ -315,7 +315,7 @@ The `*.qmd` files are located with in the "Pages/" directory, the `*.yml` and an
   
   \begin{codebox}
   \begin{Verbatim}[breaklines = true, breaksymbol = \textcolor{idlelinnum}{\scriptsize$\hookrightarrow$}, commandchars = \\\{\}]
-\func{cd} \str{"FILE-PATH/resource-page/"}
+\func{cd} \str{"FILE-PATH/ai-resources-page/"}
   \end{Verbatim}
   \end{codebox}
 
@@ -369,7 +369,7 @@ The `*.qmd` files are located with in the "Pages/" directory, the `*.yml` and an
   
   \begin{codebox}
   \begin{Verbatim}[breaklines = true, breaksymbol = \textcolor{idlelinnum}{\scriptsize$\hookrightarrow$}, commandchars = \\\{\}]
-\func{cd} \str{"FILE-PATH/resource-page/"}
+\func{cd} \str{"FILE-PATH/ai-resources-page/"}
   \end{Verbatim}
   \end{codebox}
 
