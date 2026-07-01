@@ -8,6 +8,9 @@ description: |
   </br>
   </br>
   Below is a curated list of common AI tools and links to Yale-provided tools, which are free for Yale affiliates and may include additional security protections. Tools are organized by common use cases, with brief descriptions of how to best utilize them.
+  </br>
+  </br>
+  <span style="font-size:0.8em; line-height:1.2 !important; display:inline-block;"><strong>Disclaimer:</strong> AI tool descriptions are brief summaries of providers’ official product pages and may not be up to date. Please refer to the provider’s website for current details; no endorsement is implied.</span>
 include-in-header: 
   - ../_includes/feedback_popup.html
 toc: false
@@ -15,10 +18,17 @@ bibliography: references.bib
 csl: ../Code/nature.csl
 ---
 
-:::{.column-screen}
+:::{.column-page}
 
 ```{=html}
 <body>
+  <style>
+  .container_static_page_tiles{
+    margin-bottom: -1rem !important;
+    padding-bottom: 0 !important;
+    align-content: flex-start;
+  }
+  </style>
   <div class="container_static_page_tiles">
       <div class="tile_static_page" id="tile1">
           <canvas class="network-canvas"></canvas>
@@ -64,7 +74,7 @@ csl: ../Code/nature.csl
 </body>
 ```
 
-:::
+
 
 ```{=html}
 <body>
@@ -121,11 +131,12 @@ csl: ../Code/nature.csl
     </tr>
 </table>
 
+
 ```{=html}
 <body>
   <div class="table_type_header">
     <canvas class="network-canvas"></canvas>
-    <div class="overlay-text">Figure and Image Generation</div>
+    <div class="overlay-text">Figure & Image Generation</div>
   </div>
 </body>
 ```
@@ -225,6 +236,7 @@ csl: ../Code/nature.csl
     </tr>
 </table>
 
+
 ```{=html}
 <body>
   <div class="table_type_header">
@@ -244,13 +256,13 @@ csl: ../Code/nature.csl
     <tr>
         <td class="tool-name"><a href="https://chatgpt.com/">ChatGPT</a></td>
         <td class="description">A large language model (LLM) developed by OpenAI that interacts with users through open-ended dialogue and serves as the core model in specialized tools deployed by OpenAI and other developers. It is trained using Reinforcement Learning from Human Feedback (RLHF), similar to InstructGPT, with supervised fine-tuning and output ranking. Notable limitations include hallucinations, sensitivity to prompt variation, and inferring user meaning without asking for clarity. OpenAI continually works to improve content appropriateness, reduce biased results, and enhance usage controls with each release. They offer various tools and models designed for specific applications and domains (research, business, coding, etc.).</td>
-        <td class="at-yale" data-label="Free At Yale?"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform">Yes through the Clarity Platform</a></td>
+        <td class="at-yale" data-label="Free At Yale?"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform">Yes, through the Clarity Platform</a></td>
     </tr>
     <!-- Row 2 -->
     <tr>
         <td class="tool-name"><a href="https://claude.ai/login">Claude</a></td>
         <td class="description">An AI tool from the Claude series developed by Anthropic using Constitutional AI training, offering models like Opus, Sonnet, and Haiku with varying performance features that serve as the foundation for tools from Anthropic and other developers. Trained and fine-tuned using RLHF and supervised training aligned with Anthropic's Constitutional AI standards for helpful, honest, and harmless AI. Uses retrieval augmentation to combine trained outputs with external data. Limitations include hallucinations and latency, though stringent safeguards are implemented aligned with Constitutional AI principles. They offer various tools and models designed for specific applications and domains (research, business, coding, etc.) with integrations in workflow tools like IDEs, Microsoft 365, and web browsers.</td>
-        <td class="at-yale" data-label="Free At Yale?"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform">Yes through the Clarity Platform</a></td>
+        <td class="at-yale" data-label="Free At Yale?"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform">Yes, through the Clarity Platform</a></td>
     </tr>
     <!-- Row 3
     Removed as the site is blocked by the Yale firewall
@@ -263,7 +275,7 @@ csl: ../Code/nature.csl
     <tr>
         <td class="tool-name"><a href="https://gemini.google.com/">Gemini</a></td>
         <td class="description">A multimodal LLM (text, audio, images, and more) hybrid tool developed by Google for open-ended dialogue that serves as the foundation for specialized tools from Google and other developers. Trained on publicly available data filtered for appropriateness and fine-tuned with RLHF and supervised training. Uses retrieval augmentation to combine trained outputs with external data. Limitations include hallucinations, persona projection, glitches with nonsensical prompts, and presenting narrow options rather than comprehensive synthesis. Google continually works to improve content appropriateness, reduce bias, and enhance usage controls with each release. They offer various tools and models designed for specific applications and domains (creative inspiration, media generation, research, business, coding, etc.).</td>
-        <td class="at-yale" data-label="Free At Yale?"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform">Yes through the Clarity Platform</a></td>
+        <td class="at-yale" data-label="Free At Yale?"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform">Yes, through the Clarity Platform</a></td>
     </tr>
     <!-- Row 5 -->
     <tr>
@@ -273,7 +285,7 @@ csl: ../Code/nature.csl
     </tr>
 </table>
 
-
+:::
 
 
 

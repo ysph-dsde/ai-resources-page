@@ -204,7 +204,7 @@ div.callout-important.callout {
 /* Index page banner styling */
 
 .landing-banner {
-    background-image: url('Images/AdobeStock_323829966_cropped.jpeg');
+    background-image: url('Images/Gemini_Generated_Image_9mwzr69mwzr69mwz_modified.png');
     background-size: cover; /* Ensure the image covers the banner area */
     background-position: left center; /* Align the background image to center-left */
     width: 100vw; /* Extend the banner to some width of the viewport */
@@ -522,8 +522,8 @@ div.datatables {
   position: relative;
   width: 100%;
   height: 350px; /* Adjust as needed */
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 .network-canvas {
   position: absolute;
@@ -537,10 +537,29 @@ div.datatables {
   font-family: 'YaleNew';
   top: 50%;
   left: 50%;
+  text-align: center;
+  width: 70%;
   transform: translate(-50%, -50%);
-  color: black; /* Adjust text color as needed */
-  font-size: 50px; /* Adjust font size as needed */
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.1;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    width: 90%;
+    font-size: 60px;
+    line-height: 1.15;
+  }
+}
+@media (max-width: 480px) {
+  .overlay-text {
+    width: 94%;
+    font-size: 45px;
+    line-height: 1.2;
+  }
 }
 
 /* Content tiles */
@@ -727,7 +746,7 @@ div.datatables {
 }
 .curation-table .tool-name {
     width: 15%;
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     margin-right: 2px;
 }
@@ -736,15 +755,18 @@ div.datatables {
     text-align: center;
     font-weight: bold;
 }
+.curation-table th.description{
+  text-align: center !important;
+}
 .curation-table .description {
     text-align: left;
 }
 .curation-table tr:not(:first-child):hover {
     background: linear-gradient(to right, 
-      rgba(211, 211, 211, 0) 0%, 
-      hsla(195, 75%, 67%, 0.07) 20%, 
-      hsla(195, 75%, 67%, 0.07) 80%, 
-      rgba(211, 211, 211, 0) 100%);
+      rgba(211, 211, 211, 0.01) 0%, 
+      hsla(195, 75%, 67%, 0.06) 20%, 
+      hsla(195, 75%, 67%, 0.06) 80%, 
+      rgba(211, 211, 211, 0.01) 100%);
 }
 /* Ensure the header row maintains default background on hover */
 .curation-table tr:first-child:hover {
@@ -1455,17 +1477,6 @@ ol, ul {
   color: var(--link-color);
   font-size: 1.2em;
 }
-.tile_static_page .content .description{
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;   /* <- number of lines */
-  overflow: hidden;
-}
-@media (max-width: 1000px) {
-  .tile_static h2 {
-    padding-top: 10px;
-  }
-}
 
 
 /*-- scss: header tiles --*/
@@ -1566,13 +1577,14 @@ ol, ul {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    gap: 20px;
+    gap: 15px;
+    padding: 0;
 }
 .tile_static_page {
     position: relative;
     width: 30%; /* Adjust width as needed */
     min-width: 320px;
-    height: 350px; /* Fixed height for consistency */
+    height: 430px; /* Fixed height for consistency */
     margin-bottom: 20px;
     border: 1px solid #212529; /* Uniform border color */
     overflow: hidden;
@@ -1621,6 +1633,12 @@ ol, ul {
     font-size: 1rem;
     color: black;
 }
+.tile_static_page .content .description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;   /* <- number of lines */
+  overflow: hidden;
+}
 .tile_static_page h2 {
     bottom: 20px;
     left: 10px;
@@ -1630,7 +1648,7 @@ ol, ul {
 .tile_icon_static {
     position: absolute;  
     bottom: 20px;
-    right: 15px;
+    right: 20px;
     color: black;
     font-size: 24px;
     text-shadow: 1px 1px 2px #fff;
@@ -1648,30 +1666,45 @@ ol, ul {
 
 /* Responsive layout for different screen sizes */
 @media (max-width: 990px) {
-    .tile_static_page {
-        width: 38%; /* Adjust width for smaller screens */
-    }
+  .container_static_page_tiles {
+    gap: 12px;                 /* slightly tighter */
+    justify-content: center;    /* keep centered */
+  }
+  .tile_static_page {
+    width: 38%;
+  }
+  .tile_static h2 {
+    padding-top: 10px;
+  }
 }
-
 @media (max-width: 630px) {
-    .container_static_page_tiles {
-        flex-direction: column; /* Stack tiles vertically */
-    }
-
-    .tile_static_page {
-        width: 60%; /* Adjust width for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .tile_static_page {
-        margin-bottom: 0px;
-    }
-
-    .tile_icon_static {
-        font-size: 20px;
-        bottom: 25px;
-    }
+  .container_static_page_tiles {
+    flex-direction: column;    /* stack vertically */
+    flex-wrap: nowrap;         /* avoid wrap conflicts when column */
+    gap: 20px;
+    align-items: center;       /* center the tiles in the column */
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .tile_static_page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 290px;
+    min-height: 450px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .tile_static_page .content .description {
+    -webkit-line-clamp: 10;
+  }
+  .tile_icon_static {
+    font-size: 20px;
+    bottom: 22px;
+    right: 20px;
+  }
 }
 
 

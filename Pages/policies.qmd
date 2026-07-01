@@ -7,11 +7,12 @@ description: |
   Three core organizations provide guidance and support for Yale students, staff, and faculty using AI in education and work: <a href="https://ai.yale.edu/" target="_blank">AI at Yale</a>, the <a href="https://poorvucenter.yale.edu/" target="_blank">Poorvu Center for Teaching and Learning</a>, and the <a href="https://library.yale.edu/" target="_blank">Yale Libraries</a>. Explore the following curated pages from these sources to learn more about how to appropriately and effectively implement AI in your education or work.
 include-in-header: 
   - ../_includes/feedback_popup.html
+toc: false
 bibliography: references.bib
 csl: ../Code/nature.csl
 ---
 
-:::{.column-screen}
+:::{.column-page}
 
 ```{=html}
 <body>
